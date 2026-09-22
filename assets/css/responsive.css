@@ -1,0 +1,240 @@
+/**
+ * CineSphere - Responsive CSS Overrides & Grid Rules
+ * Supporting 1920px, 1440px, 1024px, 768px, 480px, and 360px
+ */
+
+/* Container width clamping */
+.cs-container {
+  width: 100%;
+  max-width: 1380px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Movie Grid System */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* 1440px - Large Desktop */
+@media (max-width: 1440px) {
+  .cs-container {
+    max-width: 1240px;
+  }
+}
+
+/* 1200px - Desktop to Medium Desktop */
+@media (max-width: 1200px) {
+  .movie-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .cs-hero-title {
+    font-size: 2.3rem;
+  }
+  .cs-hero-content {
+    padding: 36px;
+  }
+}
+
+/* 992px - Tablet Landscape & Small Laptops */
+@media (max-width: 991.98px) {
+  .cs-main-content-col {
+    width: 100% !important;
+  }
+  .cs-sidebar-col {
+    width: 100% !important;
+    margin-top: 36px;
+  }
+  .movie-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .ad-top-banner, .ad-hero-banner, .ad-bottom-banner, .ad-between-sections, .ad-listing-in-content {
+    max-width: 100%;
+    min-height: 70px;
+    padding: 10px 12px;
+  }
+  .ad-sidebar {
+    max-width: 100%;
+    min-height: 120px;
+    padding: 16px;
+  }
+  .cs-detail-body {
+    padding: 24px;
+  }
+  .cs-detail-title {
+    font-size: 2.1rem;
+  }
+}
+
+/* 768px - Tablet Portrait */
+@media (max-width: 767.98px) {
+  .cs-container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .cs-hero-content {
+    padding: 26px 18px;
+  }
+  .cs-hero-title {
+    font-size: 1.85rem;
+  }
+  .cs-hero-desc {
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+  .btn-watch, .btn-download {
+    width: 100%;
+    padding: 11px 18px;
+    font-size: 0.9rem;
+  }
+  .cs-hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .cs-section-title {
+    font-size: 1.18rem;
+  }
+  .cs-header-search {
+    min-width: 100%;
+    margin-top: 10px;
+  }
+  .cs-detail-poster-wrap {
+    max-width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cs-metadata-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 12px;
+  }
+  .cs-download-server-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .cs-download-server-row .btn {
+    width: 100%;
+  }
+}
+
+/* 480px - Mobile Standard */
+@media (max-width: 480px) {
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .movie-info {
+    padding: 10px 8px 12px 8px;
+  }
+  .movie-title {
+    font-size: 0.88rem;
+  }
+  .movie-meta {
+    font-size: 0.72rem;
+  }
+  .badge-overlay-quality {
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    top: 6px;
+    left: 6px;
+  }
+  .badge-overlay-rating {
+    font-size: 0.68rem;
+    padding: 2px 6px;
+    top: 6px;
+    right: 6px;
+  }
+  .badge-overlay-lang {
+    font-size: 0.62rem;
+    padding: 2px 5px;
+    bottom: 6px;
+    left: 6px;
+  }
+  .cs-brand {
+    font-size: 1.25rem;
+  }
+  .cs-brand-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 0.95rem;
+  }
+  .cs-search-input-group input {
+    font-size: 0.95rem;
+    padding: 13px 44px 13px 40px;
+  }
+
+  /* Advertisement Mobile Adaptations (480px) */
+  .cs-ad-container {
+    padding: 10px 10px;
+    min-height: 60px;
+    margin: 16px auto;
+  }
+  .cs-ad-content, .cs-ad-placeholder {
+    gap: 8px;
+  }
+  .cs-ad-content i, .cs-ad-placeholder i {
+    font-size: 1.2rem;
+  }
+  .cs-ad-text {
+    font-size: 0.78rem;
+    line-height: 1.35;
+  }
+  .cs-ad-subtext {
+    font-size: 0.68rem;
+  }
+  .cs-ad-dimensions-badge {
+    font-size: 0.62rem;
+  }
+  .ad-mobile-banner {
+    display: flex;
+  }
+}
+
+/* 360px - Small Mobile Screens (360px, 375px, 390px, 414px) */
+@media (max-width: 360px) {
+  .cs-hero-title {
+    font-size: 1.55rem;
+  }
+  .movie-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+  .movie-meta-dot {
+    display: none;
+  }
+  .cs-category-pill {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+
+  /* Compact Ad Placeholders for 360px screens */
+  .cs-ad-container {
+    padding: 8px 6px;
+    margin: 12px auto;
+  }
+  .cs-ad-tag {
+    font-size: 0.6rem;
+    padding: 1px 5px;
+    letter-spacing: 0.1em;
+  }
+  .cs-ad-text {
+    font-size: 0.72rem;
+  }
+  .cs-ad-subtext {
+    display: none; /* Hide secondary subtext on ultra-narrow 360px screens to prevent CLS */
+  }
+  .cs-ad-content i, .cs-ad-placeholder i {
+    font-size: 1rem;
+  }
+}

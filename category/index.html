@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Category Movies - Watch Online &amp; Downloads | CineSphere</title>
+    <meta name="description" content="Browse movies by genre and category on CineSphere. Verified 4K UHD and 1080p streaming links and fast cloud download mirrors." />
+    <link rel="canonical" href="https://cinesphere.example.com/categories" />
+
+    <!-- Google Search Console Verification Placeholder -->
+    <!-- <meta name="google-site-verification" content="YOUR_GSC_VERIFICATION_KEY" /> -->
+
+    <meta property="og:title" content="Category Movies | CineSphere" />
+    <meta property="og:description" content="Browse movies by genre and category on CineSphere. Verified 4K UHD and 1080p streaming links." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cinesphere.example.com/categories" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1200&auto=format&fit=crop" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Category Movies | CineSphere" />
+    <meta name="twitter:description" content="Browse movies by genre and category on CineSphere." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1200&auto=format&fit=crop" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Top Ad -->
+    <aside class="container pt-2" aria-label="Top Advertisement Area">
+      <div class="cs-ad-container ad-top-banner">
+        <span class="cs-ad-tag">ADVERTISEMENT</span>
+        <div class="cs-ad-content">
+          <i class="bi bi-badge-ad"></i>
+          <div>
+            <div class="cs-ad-text">Ultra-Fast Fiber Gigabit Streaming • No Buffering Guarantee</div>
+            <div class="cs-ad-subtext">Sponsored Advertisement Placement • Leaderboard 728 × 90</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Header -->
+    <header class="cs-header">
+      <nav class="navbar navbar-expand-lg navbar-dark cs-container py-2" aria-label="Main Navigation">
+        <a class="navbar-brand cs-brand" href="/" aria-label="CineSphere Home">
+          <div class="cs-brand-icon"><i class="bi bi-film"></i></div>
+          <span>CINE<span class="text-accent">SPHERE</span></span>
+        </a>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="desktopNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-3 gap-1">
+            <li class="nav-item"><a class="nav-link cs-nav-link" href="/"><i class="bi bi-house-door me-1"></i> Home</a></li>
+            <li class="nav-item"><a class="nav-link cs-nav-link" href="/movies"><i class="bi bi-collection-play me-1"></i> Movies</a></li>
+            <li class="nav-item"><a class="nav-link cs-nav-link" href="/latest"><i class="bi bi-clock-history me-1"></i> Latest</a></li>
+            <li class="nav-item"><a class="nav-link cs-nav-link" href="/popular"><i class="bi bi-fire me-1"></i> Popular</a></li>
+            <li class="nav-item"><a class="nav-link cs-nav-link active" href="/categories"><i class="bi bi-grid me-1"></i> Categories</a></li>
+          </ul>
+          <div class="cs-header-search me-lg-3">
+            <i class="bi bi-search search-icon"></i>
+            <input type="text" id="headerSearchInput" placeholder="Quick search titles, actors..." />
+          </div>
+          <a href="/search" class="btn btn-watch btn-sm-action d-none d-lg-inline-flex"><i class="bi bi-search"></i> Advanced Search</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="offcanvas offcanvas-start cs-offcanvas" tabindex="-1" id="mobileNavOffcanvas">
+      <div class="offcanvas-header border-bottom border-dark">
+        <a class="cs-brand" href="/"><div class="cs-brand-icon"><i class="bi bi-film"></i></div><span>CINE<span class="text-accent">SPHERE</span></span></a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="nav flex-column gap-2">
+          <li class="nav-item"><a class="nav-link cs-nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link cs-nav-link" href="/movies">All Movies</a></li>
+          <li class="nav-item"><a class="nav-link cs-nav-link" href="/latest">Latest Movies</a></li>
+          <li class="nav-item"><a class="nav-link cs-nav-link" href="/popular">Popular Movies</a></li>
+          <li class="nav-item"><a class="nav-link cs-nav-link active" href="/categories">Categories</a></li>
+          <li class="nav-item"><a class="nav-link cs-nav-link" href="/search">Advanced Search</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="cs-container my-4">
+      <nav aria-label="breadcrumb">
+        <ol class="cs-breadcrumb list-unstyled mb-3">
+          <li><a href="/">Home</a></li>
+          <li class="cs-breadcrumb-divider">/</li>
+          <li><a href="/categories">Categories</a></li>
+          <li class="cs-breadcrumb-divider">/</li>
+          <li class="text-white fw-bold" id="categoryBreadcrumb">Genre Collection</li>
+        </ol>
+      </nav>
+
+      <div class="cs-search-hero py-4 mb-4">
+        <h1 class="h2 fw-bold text-white mb-2" id="categoryPageTitle">Category Movies</h1>
+        <p class="text-secondary mb-2" id="categoryPageDesc">Browse our curated collection of verified cinema releases.</p>
+        <span class="badge bg-secondary" id="categoryPageCount">0 movies available</span>
+      </div>
+
+      <!-- 70/30 Grid -->
+      <div class="row g-4">
+        <div class="col-lg-8 col-xl-9 cs-main-content-col">
+          <div class="movie-grid mb-4" id="categoryMoviesGrid"></div>
+          <div id="categoryPagination" class="mb-5"></div>
+        </div>
+
+        <aside class="col-lg-4 col-xl-3 cs-sidebar-col">
+          <div class="cs-ad-container ad-sidebar">
+            <span class="cs-ad-tag">ADVERTISEMENT</span>
+            <div class="py-3 text-center">
+              <i class="bi bi-shield-check text-muted fs-1 mb-2 d-block"></i>
+              <div class="cs-ad-text mb-1">Ultra-Secure Cloud VPN</div>
+              <div class="cs-ad-subtext mb-2">Bypass ISP throttling with verified high-speed nodes</div>
+              <span class="badge bg-secondary opacity-75">300 × 250 Ad Slot</span>
+            </div>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3 class="cs-sidebar-title"><i class="bi bi-tags-fill"></i> All Genres</h3>
+            <div class="cs-category-pills">
+              <a href="/category/action" class="cs-category-pill">Action</a>
+              <a href="/category/adventure" class="cs-category-pill">Adventure</a>
+              <a href="/category/comedy" class="cs-category-pill">Comedy</a>
+              <a href="/category/crime" class="cs-category-pill">Crime</a>
+              <a href="/category/drama" class="cs-category-pill">Drama</a>
+              <a href="/category/fantasy" class="cs-category-pill">Fantasy</a>
+              <a href="/category/horror" class="cs-category-pill">Horror</a>
+              <a href="/category/romance" class="cs-category-pill">Romance</a>
+              <a href="/category/sci-fi" class="cs-category-pill">Sci-Fi</a>
+              <a href="/category/thriller" class="cs-category-pill">Thriller</a>
+              <a href="/category/animation" class="cs-category-pill">Animation</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <aside class="my-5" aria-label="Bottom Banner Advertisement">
+        <div class="cs-ad-container ad-bottom-banner">
+          <span class="cs-ad-tag">ADVERTISEMENT</span>
+          <div class="cs-ad-content">
+            <i class="bi bi-film fs-3"></i>
+            <div>
+              <div class="cs-ad-text">Official CineSphere Partner Network • 24/7 High-Bandwidth Mirrors</div>
+              <div class="cs-ad-subtext">Sponsored Billboard • 970 × 90 Ad Space</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cs-footer">
+      <div class="cs-container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <a class="cs-brand mb-3 d-inline-flex" href="/"><div class="cs-brand-icon"><i class="bi bi-film"></i></div><span>CINE<span class="text-accent">SPHERE</span></span></a>
+            <p class="text-secondary small pe-lg-4">Explore our thematic cinema categories with verified streaming links and high-speed mirrors.</p>
+          </div>
+          <div class="col-lg-2 col-md-6 col-6">
+            <h4 class="cs-footer-title">Explore</h4>
+            <ul class="cs-footer-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/movies">All Movies</a></li>
+              <li><a href="/latest">Latest Movies</a></li>
+              <li><a href="/popular">Most Popular</a></li>
+              <li><a href="/categories">Categories</a></li>
+              <li><a href="/search">Advanced Search</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-6">
+            <h4 class="cs-footer-title">Top Genres</h4>
+            <ul class="cs-footer-links">
+              <li><a href="/category/action">Action Blockbusters</a></li>
+              <li><a href="/category/sci-fi">Sci-Fi &amp; Cyberpunk</a></li>
+              <li><a href="/categories">Drama &amp; Biography</a></li>
+              <li><a href="/categories">Adventure</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="cs-footer-title">Legal &amp; Trust</h4>
+            <ul class="cs-footer-links mb-3">
+              <li><a href="#csPrivacyModal" data-bs-toggle="modal" data-bs-target="#csPrivacyModal">Privacy Policy</a></li>
+              <li><a href="#csTermsModal" data-bs-toggle="modal" data-bs-target="#csTermsModal">Terms of Service</a></li>
+              <li><a href="#csDisclaimerModal" data-bs-toggle="modal" data-bs-target="#csDisclaimerModal">Content Disclaimer</a></li>
+              <li><a href="#csContactModal" data-bs-toggle="modal" data-bs-target="#csContactModal">Contact &amp; DMCA</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="cs-footer-disclaimer">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <p class="mb-0">&copy; 2026 CineSphere Entertainment Platform. All rights reserved.</p>
+            </div>
+            <div class="col-md-4 text-md-end mt-2 mt-md-0">
+              <span class="badge bg-dark border border-secondary text-secondary px-3 py-1">Phase 5 • Real Visitor Analytics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/movies-data.js"></script>
+    <script src="/assets/js/seo-helper.js"></script>
+    <script src="/assets/js/ad-config.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+    <!-- ========================================== -->
+    <!-- ANALYTICS INTEGRATION START                -->
+    <!-- Real Visitor Analytics Architecture (Phase 5) -->
+    <!-- ========================================== -->
+    <script src="/assets/js/analytics-config.js"></script>
+    <script src="/assets/js/analytics.js" defer></script>
+    <!-- Example Provider Script (Disabled until real ID provided):
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_ANALYTICS_ID"></script>
+    -->
+    <!-- ANALYTICS INTEGRATION END -->
+  </body>
+</html>

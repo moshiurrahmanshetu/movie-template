@@ -1,0 +1,874 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Foundation -->
+    <title>CineSphere - Premium Movie Discovery & Streaming Links</title>
+    <meta name="description" content="Discover, explore, and stream the latest high-definition movies in 4K UHD and 1080p. Direct streaming links and fast cloud downloads." />
+    <link rel="canonical" href="https://cinesphere.example.com/" />
+
+    <!-- Google Search Console Verification Placeholder -->
+    <!-- <meta name="google-site-verification" content="YOUR_GSC_VERIFICATION_KEY" /> -->
+    
+    <!-- Open Graph & Social Sharing Metadata -->
+    <meta property="og:title" content="CineSphere - Premium Movie Discovery & Streaming Links" />
+    <meta property="og:description" content="Explore top-rated movies, new 4K UHD releases, and verified streaming mirrors on CineSphere." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cinesphere.example.com/" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1200&auto=format&fit=crop" />
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CineSphere - Premium Movie Discovery & Streaming Links" />
+    <meta name="twitter:description" content="Explore top-rated movies, new 4K UHD releases, and verified streaming mirrors on CineSphere." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1200&auto=format&fit=crop" />
+
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "CineSphere",
+      "url": "https://cinesphere.example.com/",
+      "description": "Discover, explore, and stream the latest high-definition movies in 4K UHD and 1080p.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://cinesphere.example.com/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cinesphere.example.com/"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    
+    <!-- Custom Theme Stylesheets -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+  <body>
+
+    <!-- 1. Header / Navigation -->
+    <header class="cs-header">
+      <nav class="navbar navbar-expand-lg navbar-dark cs-container py-2" aria-label="Main Navigation">
+        <!-- Brand Logo -->
+        <a class="navbar-brand cs-brand" href="/" aria-label="CineSphere Home">
+          <div class="cs-brand-icon">
+            <i class="bi bi-film"></i>
+          </div>
+          <span>CINE<span class="text-accent">SPHERE</span></span>
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Desktop Navigation Items -->
+        <div class="collapse navbar-collapse" id="desktopNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-3 gap-1">
+            <li class="nav-item">
+              <a class="nav-link cs-nav-link active" href="/"><i class="bi bi-house-door me-1"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cs-nav-link" href="/movies"><i class="bi bi-collection-play me-1"></i> Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cs-nav-link" href="/categories"><i class="bi bi-grid me-1"></i> Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cs-nav-link" href="/movies#latest"><i class="bi bi-clock-history me-1"></i> Latest</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cs-nav-link" href="/movies#popular"><i class="bi bi-fire me-1"></i> Popular</a>
+            </li>
+          </ul>
+
+          <!-- Header Search Bar -->
+          <div class="cs-header-search me-lg-3">
+            <i class="bi bi-search search-icon"></i>
+            <input type="text" id="headerSearchInput" placeholder="Quick search titles, actors..." aria-label="Quick Search" />
+          </div>
+
+          <!-- Quick Action -->
+          <a href="/search" class="btn btn-watch btn-sm-action d-none d-lg-inline-flex" aria-label="Advanced Search">
+            <i class="bi bi-search"></i> Explore All
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- 2. Top Banner Advertisement (Header ↓ Top Banner Ad ↓ Hero) -->
+    <aside class="container pt-3" aria-label="Top Advertisement Area">
+      <div class="cs-ad-container ad-top-banner" data-ad-type="top-banner">
+        <span class="cs-ad-tag">ADVERTISEMENT</span>
+        <!-- ADSTERRA CODE START -->
+        <!-- Real publisher code will be inserted here -->
+        <div class="cs-ad-placeholder">
+          <i class="bi bi-badge-ad"></i>
+          <div>
+            <div class="cs-ad-text">Ultra-Fast Fiber Gigabit Streaming • No Buffering Guarantee</div>
+            <div class="cs-ad-subtext">Sponsored Advertisement Placement • Leaderboard 728 × 90 / 970 × 90</div>
+          </div>
+        </div>
+        <!-- ADSTERRA CODE END -->
+      </div>
+    </aside>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div class="offcanvas offcanvas-start cs-offcanvas" tabindex="-1" id="mobileNavOffcanvas" aria-labelledby="mobileNavOffcanvasLabel">
+      <div class="offcanvas-header border-bottom border-dark">
+        <a class="cs-brand" href="/">
+          <div class="cs-brand-icon">
+            <i class="bi bi-film"></i>
+          </div>
+          <span>CINE<span class="text-accent">SPHERE</span></span>
+        </a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column justify-content-between">
+        <div>
+          <!-- Mobile Search -->
+          <div class="mb-4">
+            <form action="/search" method="GET">
+              <div class="cs-header-search">
+                <i class="bi bi-search search-icon"></i>
+                <input type="text" name="q" placeholder="Search movies, cast, genres..." aria-label="Search" />
+              </div>
+            </form>
+          </div>
+          <ul class="nav flex-column gap-2">
+            <li class="nav-item">
+              <a class="nav-link cs-nav-link active" href="/"><i class="bi bi-house-door me-2"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cs-nav-link" href="/movies"><i class="bi bi-collection-play me-2"></i> All Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cs-nav-link" href="/categories"><i class="bi bi-grid me-2"></i> Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cs-nav-link" href="/search"><i class="bi bi-sliders me-2"></i> Advanced Search</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-4 pt-3 border-top border-dark text-muted small">
+          <p class="mb-1"><i class="bi bi-shield-check text-accent me-1"></i> Verified Fast Download Servers</p>
+          <p class="mb-0">CineSphere Entertainment Platform &copy; 2026</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="cs-container my-4">
+
+      <!-- 2. Hero Section (Featured Movie: Dune Part Two) -->
+      <section class="cs-hero" aria-label="Featured Movie">
+        <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1600&auto=format&fit=crop" alt="Dune: Part Two Backdrop" class="cs-hero-backdrop" />
+        <div class="cs-hero-overlay"></div>
+        <div class="cs-hero-content">
+          <div class="cs-hero-badge-wrap">
+            <span class="badge bg-danger fw-bold px-2 py-1"><i class="bi bi-star-fill me-1"></i> FEATURED PREMIERE</span>
+            <span class="badge-overlay-quality badge-4k position-static">4K UHD</span>
+            <span class="badge-overlay-rating position-static"><i class="bi bi-star-fill"></i> 8.6 / 10</span>
+            <span class="text-secondary small ms-1">• 2024 • 2h 46m • Dual Audio</span>
+          </div>
+
+          <h1 class="cs-hero-title">Dune: Part Two</h1>
+          <p class="cs-hero-desc">
+            Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe, he endeavors to prevent a catastrophic future.
+          </p>
+
+          <div class="cs-hero-actions">
+            <!-- PRIMARY CTAs ONLY: Watch Now & Download. ZERO TRAILERS. -->
+            <a href="/movie/dune-2" class="btn btn-watch" aria-label="Watch Dune: Part Two Now">
+              <i class="bi bi-play-circle-fill fs-5"></i> Watch Now
+            </a>
+            <a href="/movie/dune-2#download" class="btn btn-download" aria-label="Download Dune: Part Two in 4K UHD">
+              <i class="bi bi-cloud-arrow-down-fill fs-5"></i> Download 4K
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Hero / Banner Ad Placement (Hero ↓ Latest Movies) -->
+      <aside class="my-4" aria-label="Hero Banner Advertisement">
+        <div class="cs-ad-container ad-hero-banner" data-ad-type="hero-banner">
+          <span class="cs-ad-tag">ADVERTISEMENT</span>
+          <!-- ADSTERRA CODE START -->
+          <!-- Real publisher code will be inserted here -->
+          <div class="cs-ad-placeholder">
+            <i class="bi bi-broadcast fs-3"></i>
+            <div>
+              <div class="cs-ad-text">Stream Unlimited 4K Movies Without Bandwidth Caps • Premium VPN Shield</div>
+              <div class="cs-ad-subtext">Sponsored Placement • Leaderboard 970 × 90 Ad Space</div>
+            </div>
+          </div>
+          <!-- ADSTERRA CODE END -->
+        </div>
+      </aside>
+
+      <!-- Desktop 70/30 Content & Sidebar Layout -->
+      <div class="row g-4">
+
+        <!-- Main Content Column (Approx 70-75%) -->
+        <div class="col-lg-8 col-xl-9 cs-main-content-col">
+
+          <!-- Section 1: Latest Movies (Header ↓ Top Banner Ad ↓ Hero ↓ Latest Movies) -->
+          <section class="mb-5" id="latest" aria-labelledby="latestMoviesHeading">
+            <div class="cs-section-header">
+              <h2 id="latestMoviesHeading" class="cs-section-title">
+                Latest HD Releases
+              </h2>
+              <a href="/movies" class="cs-view-all">Explore More <i class="bi bi-chevron-right"></i></a>
+            </div>
+
+            <div class="movie-grid">
+              <!-- Movie Card: Gladiator II -->
+              <article class="movie-card" data-slug="gladiator-2">
+                <div class="movie-poster-wrap">
+                  <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=800&auto=format&fit=crop" alt="Gladiator II Poster" class="movie-poster" loading="lazy" />
+                  <span class="badge-overlay-quality badge-4k">4K UHD</span>
+                  <span class="badge-overlay-rating"><i class="bi bi-star-fill"></i> 7.5</span>
+                  <span class="badge-overlay-lang">Dual Audio</span>
+                  <div class="movie-overlay-actions">
+                    <a href="/movie/gladiator-2" class="btn btn-watch btn-sm-action"><i class="bi bi-play-fill"></i> Watch Now</a>
+                    <a href="/movie/gladiator-2#download" class="btn btn-download btn-sm-action"><i class="bi bi-download"></i> Download</a>
+                  </div>
+                </div>
+                <div class="movie-info">
+                  <h3 class="movie-title"><a href="/movie/gladiator-2">Gladiator II</a></h3>
+                  <div class="movie-meta">
+                    <span>2024</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>Action</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>2h 28m</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Movie Card: Furiosa -->
+              <article class="movie-card" data-slug="furiosa">
+                <div class="movie-poster-wrap">
+                  <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=800&auto=format&fit=crop" alt="Furiosa Poster" class="movie-poster" loading="lazy" />
+                  <span class="badge-overlay-quality badge-4k">4K UHD</span>
+                  <span class="badge-overlay-rating"><i class="bi bi-star-fill"></i> 7.6</span>
+                  <div class="movie-overlay-actions">
+                    <a href="/movie/furiosa" class="btn btn-watch btn-sm-action"><i class="bi bi-play-fill"></i> Watch Now</a>
+                    <a href="/movie/furiosa#download" class="btn btn-download btn-sm-action"><i class="bi bi-download"></i> Download</a>
+                  </div>
+                </div>
+                <div class="movie-info">
+                  <h3 class="movie-title"><a href="/movie/furiosa">Furiosa: Mad Max Saga</a></h3>
+                  <div class="movie-meta">
+                    <span>2024</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>Action</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>2h 28m</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Movie Card: Civil War -->
+              <article class="movie-card" data-slug="civil-war">
+                <div class="movie-poster-wrap">
+                  <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=800&auto=format&fit=crop" alt="Civil War Poster" class="movie-poster" loading="lazy" />
+                  <span class="badge-overlay-quality">1080p</span>
+                  <span class="badge-overlay-rating"><i class="bi bi-star-fill"></i> 7.2</span>
+                  <div class="movie-overlay-actions">
+                    <a href="/movie/civil-war" class="btn btn-watch btn-sm-action"><i class="bi bi-play-fill"></i> Watch Now</a>
+                    <a href="/movie/civil-war#download" class="btn btn-download btn-sm-action"><i class="bi bi-download"></i> Download</a>
+                  </div>
+                </div>
+                <div class="movie-info">
+                  <h3 class="movie-title"><a href="/movie/civil-war">Civil War</a></h3>
+                  <div class="movie-meta">
+                    <span>2024</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>Thriller</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>1h 49m</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Movie Card: Spider-Verse -->
+              <article class="movie-card" data-slug="spider-man-across-the-spider-verse">
+                <div class="movie-poster-wrap">
+                  <img src="https://images.unsplash.com/photo-1635805737707-575885ab0820?q=80&w=800&auto=format&fit=crop" alt="Across the Spider-Verse Poster" class="movie-poster" loading="lazy" />
+                  <span class="badge-overlay-quality badge-4k">4K UHD</span>
+                  <span class="badge-overlay-rating"><i class="bi bi-star-fill"></i> 8.7</span>
+                  <span class="badge-overlay-lang">Dual Audio</span>
+                  <div class="movie-overlay-actions">
+                    <a href="/movie/spider-man-across-the-spider-verse" class="btn btn-watch btn-sm-action"><i class="bi bi-play-fill"></i> Watch Now</a>
+                    <a href="/movie/spider-man-across-the-spider-verse#download" class="btn btn-download btn-sm-action"><i class="bi bi-download"></i> Download</a>
+                  </div>
+                </div>
+                <div class="movie-info">
+                  <h3 class="movie-title"><a href="/movie/spider-man-across-the-spider-verse">Spider-Verse</a></h3>
+                  <div class="movie-meta">
+                    <span>2023</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>Animation</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>2h 20m</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- In-Content Ad Placement (Latest Movies ↓ In-content Ad ↓ Popular Movies) -->
+          <aside class="my-4" aria-label="In-Content Advertisement">
+            <div class="cs-ad-container ad-in-content" data-ad-type="in-content">
+              <span class="cs-ad-tag">ADVERTISEMENT</span>
+              <!-- ADSTERRA CODE START -->
+              <!-- Real publisher code will be inserted here -->
+              <div class="cs-ad-placeholder">
+                <i class="bi bi-display fs-3"></i>
+                <div>
+                  <div class="cs-ad-text">Upgrade To True 4K Cinema • Premium OLED TV &amp; Sound Systems</div>
+                  <div class="cs-ad-subtext">Sponsored Placement • 728 × 90 In-Content Responsive Banner</div>
+                </div>
+              </div>
+              <!-- ADSTERRA CODE END -->
+            </div>
+          </aside>
+
+          <!-- Section 2: Most Popular Movies -->
+          <section class="mb-5" id="popular" aria-labelledby="popularMoviesHeading">
+            <div class="cs-section-header">
+              <h2 id="popularMoviesHeading" class="cs-section-title">
+                All-Time Popular
+              </h2>
+              <a href="/movies" class="cs-view-all">Full Collection <i class="bi bi-chevron-right"></i></a>
+            </div>
+
+            <div class="movie-grid">
+              <!-- Movie Card: The Batman -->
+              <article class="movie-card" data-slug="the-batman">
+                <div class="movie-poster-wrap">
+                  <img src="https://images.unsplash.com/photo-1509281373149-e957c6296406?q=80&w=800&auto=format&fit=crop" alt="The Batman Poster" class="movie-poster" loading="lazy" />
+                  <span class="badge-overlay-quality badge-4k">4K UHD</span>
+                  <span class="badge-overlay-rating"><i class="bi bi-star-fill"></i> 7.8</span>
+                  <div class="movie-overlay-actions">
+                    <a href="/movie/the-batman" class="btn btn-watch btn-sm-action"><i class="bi bi-play-fill"></i> Watch Now</a>
+                    <a href="/movie/the-batman#download" class="btn btn-download btn-sm-action"><i class="bi bi-download"></i> Download</a>
+                  </div>
+                </div>
+                <div class="movie-info">
+                  <h3 class="movie-title"><a href="/movie/the-batman">The Batman</a></h3>
+                  <div class="movie-meta">
+                    <span>2022</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>Crime</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>2h 56m</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Movie Card: Top Gun Maverick -->
+              <article class="movie-card" data-slug="top-gun-maverick">
+                <div class="movie-poster-wrap">
+                  <img src="https://images.unsplash.com/photo-1517976487502-5f654b73b22b?q=80&w=800&auto=format&fit=crop" alt="Top Gun: Maverick Poster" class="movie-poster" loading="lazy" />
+                  <span class="badge-overlay-quality badge-4k">4K UHD</span>
+                  <span class="badge-overlay-rating"><i class="bi bi-star-fill"></i> 8.3</span>
+                  <span class="badge-overlay-lang">Dual Audio</span>
+                  <div class="movie-overlay-actions">
+                    <a href="/movie/top-gun-maverick" class="btn btn-watch btn-sm-action"><i class="bi bi-play-fill"></i> Watch Now</a>
+                    <a href="/movie/top-gun-maverick#download" class="btn btn-download btn-sm-action"><i class="bi bi-download"></i> Download</a>
+                  </div>
+                </div>
+                <div class="movie-info">
+                  <h3 class="movie-title"><a href="/movie/top-gun-maverick">Top Gun: Maverick</a></h3>
+                  <div class="movie-meta">
+                    <span>2022</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>Action</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>2h 10m</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Movie Card: John Wick 4 -->
+              <article class="movie-card" data-slug="john-wick-4">
+                <div class="movie-poster-wrap">
+                  <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=800&auto=format&fit=crop" alt="John Wick: Chapter 4 Poster" class="movie-poster" loading="lazy" />
+                  <span class="badge-overlay-quality">1080p</span>
+                  <span class="badge-overlay-rating"><i class="bi bi-star-fill"></i> 7.7</span>
+                  <div class="movie-overlay-actions">
+                    <a href="/movie/john-wick-4" class="btn btn-watch btn-sm-action"><i class="bi bi-play-fill"></i> Watch Now</a>
+                    <a href="/movie/john-wick-4#download" class="btn btn-download btn-sm-action"><i class="bi bi-download"></i> Download</a>
+                  </div>
+                </div>
+                <div class="movie-info">
+                  <h3 class="movie-title"><a href="/movie/john-wick-4">John Wick: Chapter 4</a></h3>
+                  <div class="movie-meta">
+                    <span>2023</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>Action</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>2h 49m</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Movie Card: Inception -->
+              <article class="movie-card" data-slug="inception">
+                <div class="movie-poster-wrap">
+                  <img src="https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=800&auto=format&fit=crop" alt="Inception Poster" class="movie-poster" loading="lazy" />
+                  <span class="badge-overlay-quality badge-4k">4K UHD</span>
+                  <span class="badge-overlay-rating"><i class="bi bi-star-fill"></i> 8.8</span>
+                  <span class="badge-overlay-lang">Dual Audio</span>
+                  <div class="movie-overlay-actions">
+                    <a href="/movie/inception" class="btn btn-watch btn-sm-action"><i class="bi bi-play-fill"></i> Watch Now</a>
+                    <a href="/movie/inception#download" class="btn btn-download btn-sm-action"><i class="bi bi-download"></i> Download</a>
+                  </div>
+                </div>
+                <div class="movie-info">
+                  <h3 class="movie-title"><a href="/movie/inception">Inception</a></h3>
+                  <div class="movie-meta">
+                    <span>2010</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>Sci-Fi</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>2h 28m</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- Between-Sections Banner Ad Placement (Popular Movies ↓ Banner Ad ↓ Trending/Featured) -->
+          <aside class="my-4" aria-label="Between-Sections Advertisement">
+            <div class="cs-ad-container ad-between-sections" data-ad-type="between-sections">
+              <span class="cs-ad-tag">ADVERTISEMENT</span>
+              <!-- ADSTERRA CODE START -->
+              <!-- Real publisher code will be inserted here -->
+              <div class="cs-ad-placeholder">
+                <i class="bi bi-hdd-network fs-3"></i>
+                <div>
+                  <div class="cs-ad-text">Unlimited Cloud Storage For Media Collections • Multi-Device Sync</div>
+                  <div class="cs-ad-subtext">Sponsored Placement • Responsive Multi-Format Banner Slot</div>
+                </div>
+              </div>
+              <!-- ADSTERRA CODE END -->
+            </div>
+          </aside>
+
+          <!-- Section 3: Featured & Trending -->
+          <section class="mb-4" id="trending" aria-labelledby="trendingMoviesHeading">
+            <div class="cs-section-header">
+              <h2 id="trendingMoviesHeading" class="cs-section-title">
+                Trending Right Now
+              </h2>
+              <a href="/movies" class="cs-view-all">View All <i class="bi bi-chevron-right"></i></a>
+            </div>
+
+            <div class="movie-grid">
+              <!-- Movie Card: Interstellar -->
+              <article class="movie-card" data-slug="interstellar">
+                <div class="movie-poster-wrap">
+                  <img src="https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=800&auto=format&fit=crop" alt="Interstellar Poster" class="movie-poster" loading="lazy" />
+                  <span class="badge-overlay-quality badge-4k">4K UHD</span>
+                  <span class="badge-overlay-rating"><i class="bi bi-star-fill"></i> 8.7</span>
+                  <span class="badge-overlay-lang">Dual Audio</span>
+                  <div class="movie-overlay-actions">
+                    <a href="/movie/interstellar" class="btn btn-watch btn-sm-action"><i class="bi bi-play-fill"></i> Watch Now</a>
+                    <a href="/movie/interstellar#download" class="btn btn-download btn-sm-action"><i class="bi bi-download"></i> Download</a>
+                  </div>
+                </div>
+                <div class="movie-info">
+                  <h3 class="movie-title"><a href="/movie/interstellar">Interstellar</a></h3>
+                  <div class="movie-meta">
+                    <span>2014</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>Sci-Fi</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>2h 49m</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Movie Card: Dune 2 -->
+              <article class="movie-card" data-slug="dune-2">
+                <div class="movie-poster-wrap">
+                  <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=800&auto=format&fit=crop" alt="Dune: Part Two Poster" class="movie-poster" loading="lazy" />
+                  <span class="badge-overlay-quality badge-4k">4K UHD</span>
+                  <span class="badge-overlay-rating"><i class="bi bi-star-fill"></i> 8.6</span>
+                  <span class="badge-overlay-lang">Dual Audio</span>
+                  <div class="movie-overlay-actions">
+                    <a href="/movie/dune-2" class="btn btn-watch btn-sm-action"><i class="bi bi-play-fill"></i> Watch Now</a>
+                    <a href="/movie/dune-2#download" class="btn btn-download btn-sm-action"><i class="bi bi-download"></i> Download</a>
+                  </div>
+                </div>
+                <div class="movie-info">
+                  <h3 class="movie-title"><a href="/movie/dune-2">Dune: Part Two</a></h3>
+                  <div class="movie-meta">
+                    <span>2024</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>Sci-Fi</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>2h 46m</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Movie Card: Oppenheimer -->
+              <article class="movie-card" data-slug="oppenheimer">
+                <div class="movie-poster-wrap">
+                  <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?q=80&w=800&auto=format&fit=crop" alt="Oppenheimer Poster" class="movie-poster" loading="lazy" />
+                  <span class="badge-overlay-quality badge-4k">4K UHD</span>
+                  <span class="badge-overlay-rating"><i class="bi bi-star-fill"></i> 8.9</span>
+                  <span class="badge-overlay-lang">Multi-Audio</span>
+                  <div class="movie-overlay-actions">
+                    <a href="/movie/oppenheimer" class="btn btn-watch btn-sm-action"><i class="bi bi-play-fill"></i> Watch Now</a>
+                    <a href="/movie/oppenheimer#download" class="btn btn-download btn-sm-action"><i class="bi bi-download"></i> Download</a>
+                  </div>
+                </div>
+                <div class="movie-info">
+                  <h3 class="movie-title"><a href="/movie/oppenheimer">Oppenheimer</a></h3>
+                  <div class="movie-meta">
+                    <span>2023</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>Drama</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>3h 00m</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Movie Card: Avatar 2 -->
+              <article class="movie-card" data-slug="avatar">
+                <div class="movie-poster-wrap">
+                  <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=800&auto=format&fit=crop" alt="Avatar: The Way of Water Poster" class="movie-poster" loading="lazy" />
+                  <span class="badge-overlay-quality">1080p</span>
+                  <span class="badge-overlay-rating"><i class="bi bi-star-fill"></i> 7.6</span>
+                  <span class="badge-overlay-lang">Dual Audio</span>
+                  <div class="movie-overlay-actions">
+                    <a href="/movie/avatar" class="btn btn-watch btn-sm-action"><i class="bi bi-play-fill"></i> Watch Now</a>
+                    <a href="/movie/avatar#download" class="btn btn-download btn-sm-action"><i class="bi bi-download"></i> Download</a>
+                  </div>
+                </div>
+                <div class="movie-info">
+                  <h3 class="movie-title"><a href="/movie/avatar">Avatar: The Way of Water</a></h3>
+                  <div class="movie-meta">
+                    <span>2022</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>Sci-Fi</span>
+                    <span class="movie-meta-dot"></span>
+                    <span>3h 12m</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- Sidebar Column (Approx 25-30%) -->
+        <aside class="col-lg-4 col-xl-3 cs-sidebar-col" aria-label="Sidebar Content">
+
+          <!-- Sidebar Advertisement (300x250 Medium Rectangle) -->
+          <div class="cs-ad-container ad-sidebar" data-ad-type="sidebar">
+            <span class="cs-ad-tag">ADVERTISEMENT</span>
+            <!-- ADSTERRA CODE START -->
+            <!-- Real publisher code will be inserted here -->
+            <div class="cs-ad-placeholder py-3 text-center flex-column">
+              <i class="bi bi-shield-check text-muted fs-1 mb-2 d-block"></i>
+              <div class="cs-ad-text mb-1">Ultra-Secure Cloud VPN</div>
+              <div class="cs-ad-subtext mb-2">Bypass ISP throttling with verified high-speed nodes</div>
+              <span class="cs-ad-dimensions-badge">300 × 250 / 320 × 250 Ad Slot</span>
+            </div>
+            <!-- ADSTERRA CODE END -->
+          </div>
+
+          <!-- Top Rated Sidebar Quick List -->
+          <div class="cs-sidebar-card">
+            <h3 class="cs-sidebar-title">
+              <i class="bi bi-trophy-fill"></i> Top Rated Movies
+            </h3>
+            <div class="cs-mini-movie-list">
+              <a href="/movie/oppenheimer" class="cs-mini-movie-item">
+                <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?q=80&w=200&auto=format&fit=crop" alt="Oppenheimer Thumbnail" class="cs-mini-poster" loading="lazy" />
+                <div class="cs-mini-info">
+                  <span class="cs-mini-title">Oppenheimer</span>
+                  <div class="cs-mini-meta">
+                    <span class="text-warning"><i class="bi bi-star-fill"></i> 8.9</span>
+                    <span>• 2023 • 4K</span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="/movie/inception" class="cs-mini-movie-item">
+                <img src="https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=200&auto=format&fit=crop" alt="Inception Thumbnail" class="cs-mini-poster" loading="lazy" />
+                <div class="cs-mini-info">
+                  <span class="cs-mini-title">Inception</span>
+                  <div class="cs-mini-meta">
+                    <span class="text-warning"><i class="bi bi-star-fill"></i> 8.8</span>
+                    <span>• 2010 • 4K</span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="/movie/interstellar" class="cs-mini-movie-item">
+                <img src="https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=200&auto=format&fit=crop" alt="Interstellar Thumbnail" class="cs-mini-poster" loading="lazy" />
+                <div class="cs-mini-info">
+                  <span class="cs-mini-title">Interstellar</span>
+                  <div class="cs-mini-meta">
+                    <span class="text-warning"><i class="bi bi-star-fill"></i> 8.7</span>
+                    <span>• 2014 • 4K</span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="/movie/spider-man-across-the-spider-verse" class="cs-mini-movie-item">
+                <img src="https://images.unsplash.com/photo-1635805737707-575885ab0820?q=80&w=200&auto=format&fit=crop" alt="Spider-Verse Thumbnail" class="cs-mini-poster" loading="lazy" />
+                <div class="cs-mini-info">
+                  <span class="cs-mini-title">Across Spider-Verse</span>
+                  <div class="cs-mini-meta">
+                    <span class="text-warning"><i class="bi bi-star-fill"></i> 8.7</span>
+                    <span>• 2023 • 4K</span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="/movie/dune-2" class="cs-mini-movie-item">
+                <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=200&auto=format&fit=crop" alt="Dune: Part Two Thumbnail" class="cs-mini-poster" loading="lazy" />
+                <div class="cs-mini-info">
+                  <span class="cs-mini-title">Dune: Part Two</span>
+                  <div class="cs-mini-meta">
+                    <span class="text-warning"><i class="bi bi-star-fill"></i> 8.6</span>
+                    <span>• 2024 • 4K</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Browse Categories Quick Box -->
+          <div class="cs-sidebar-card">
+            <h3 class="cs-sidebar-title">
+              <i class="bi bi-tags-fill"></i> Popular Categories
+            </h3>
+            <div class="cs-category-pills">
+              <a href="/category/action" class="cs-category-pill">Action <span class="badge-count">48</span></a>
+              <a href="/category/sci-fi" class="cs-category-pill">Sci-Fi <span class="badge-count">36</span></a>
+              <a href="/categories" class="cs-category-pill">Drama <span class="badge-count">42</span></a>
+              <a href="/categories" class="cs-category-pill">Adventure <span class="badge-count">31</span></a>
+              <a href="/categories" class="cs-category-pill">Thriller <span class="badge-count">29</span></a>
+              <a href="/categories" class="cs-category-pill">Animation <span class="badge-count">19</span></a>
+              <a href="/categories" class="cs-category-pill">Horror <span class="badge-count">25</span></a>
+              <a href="/categories" class="cs-category-pill">Crime <span class="badge-count">22</span></a>
+            </div>
+          </div>
+
+          <!-- Quality Filters Box -->
+          <div class="cs-sidebar-card">
+            <h3 class="cs-sidebar-title">
+              <i class="bi bi-badge-hd-fill"></i> Video Resolution
+            </h3>
+            <div class="d-flex flex-column gap-2">
+              <a href="/search" class="d-flex align-items-center justify-content-between p-2 rounded bg-dark border border-secondary text-light small text-decoration-none">
+                <span><i class="bi bi-check2-circle text-danger me-2"></i> 4K Ultra HD (2160p)</span>
+                <span class="badge bg-danger">HDR10</span>
+              </a>
+              <a href="/search" class="d-flex align-items-center justify-content-between p-2 rounded bg-dark border border-secondary text-light small text-decoration-none">
+                <span><i class="bi bi-check2-circle text-primary me-2"></i> 1080p Full HD</span>
+                <span class="badge bg-secondary">BluRay</span>
+              </a>
+              <a href="/search" class="d-flex align-items-center justify-content-between p-2 rounded bg-dark border border-secondary text-light small text-decoration-none">
+                <span><i class="bi bi-check2-circle text-secondary me-2"></i> 720p Standard HD</span>
+                <span class="badge bg-secondary">WEB-DL</span>
+              </a>
+            </div>
+          </div>
+
+        </aside>
+      </div>
+
+      <!-- 6. Mobile Banner Slot (Displayed only on smaller screens) -->
+      <div class="cs-ad-container ad-mobile-banner d-block d-md-none" data-ad-type="mobile-banner" aria-label="Mobile Advertisement">
+        <span class="cs-ad-tag">ADVERTISEMENT</span>
+        <!-- ADSTERRA CODE START -->
+        <!-- Real publisher code will be inserted here -->
+        <div class="cs-ad-placeholder">
+          <i class="bi bi-phone"></i>
+          <div>
+            <div class="cs-ad-text">Fast Mobile 4K Media Stream</div>
+            <div class="cs-ad-subtext">Sponsored Placement • 320 × 50 / 300 × 50 Mobile Slot</div>
+          </div>
+        </div>
+        <!-- ADSTERRA CODE END -->
+      </div>
+
+      <!-- 7. Bottom Banner Ad (Header ↓ Top Banner ↓ Hero ↓ Latest Movies ↓ In-content ↓ Popular ↓ Banner ↓ Trending ↓ Bottom Ad) -->
+      <aside class="my-5" aria-label="Bottom Banner Advertisement">
+        <div class="cs-ad-container ad-bottom-banner" data-ad-type="bottom-banner">
+          <span class="cs-ad-tag">ADVERTISEMENT</span>
+          <!-- ADSTERRA CODE START -->
+          <!-- Real publisher code will be inserted here -->
+          <div class="cs-ad-placeholder">
+            <i class="bi bi-film fs-3"></i>
+            <div>
+              <div class="cs-ad-text">CineSphere Certified High-Speed Mirror Network • Fast Resumable Downloads</div>
+              <div class="cs-ad-subtext">Sponsored Billboard Placement • 970 × 90 Ad Space</div>
+            </div>
+          </div>
+          <!-- ADSTERRA CODE END -->
+        </div>
+      </aside>
+
+    </main>
+
+    <!-- 7. Footer -->
+    <footer class="cs-footer">
+      <div class="cs-container">
+        <div class="row g-4">
+          <!-- Col 1: Brand & About -->
+          <div class="col-lg-4 col-md-6">
+            <a class="cs-brand mb-3 d-inline-flex" href="/">
+              <div class="cs-brand-icon">
+                <i class="bi bi-film"></i>
+              </div>
+              <span>CINE<span class="text-accent">SPHERE</span></span>
+            </a>
+            <p class="text-secondary small pe-lg-4">
+              CineSphere is a modern, high-definition entertainment discovery portal delivering verified streaming links and high-speed cloud download mirrors.
+            </p>
+            <div class="d-flex gap-3 text-secondary fs-5 mt-3">
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+              <a href="#" aria-label="Discord"><i class="bi bi-discord"></i></a>
+              <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+
+          <!-- Col 2: Navigation Links -->
+          <div class="col-lg-2 col-md-6 col-6">
+            <h4 class="cs-footer-title">Explore</h4>
+            <ul class="cs-footer-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/movies">All Movies</a></li>
+              <li><a href="/latest">Latest Movies</a></li>
+              <li><a href="/popular">Most Popular</a></li>
+              <li><a href="/categories">Categories</a></li>
+              <li><a href="/search">Advanced Search</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Categories -->
+          <div class="col-lg-3 col-md-6 col-6">
+            <h4 class="cs-footer-title">Top Genres</h4>
+            <ul class="cs-footer-links">
+              <li><a href="/category/action">Action Blockbusters</a></li>
+              <li><a href="/category/sci-fi">Sci-Fi & Cyberpunk</a></li>
+              <li><a href="/categories">Drama & Biography</a></li>
+              <li><a href="/categories">Adventure & Expeditions</a></li>
+              <li><a href="/categories">Animation & Comics</a></li>
+              <li><a href="/categories">Crime & Thrillers</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Legal & Trust -->
+          <div class="col-lg-3 col-md-6">
+            <h4 class="cs-footer-title">Legal &amp; Trust</h4>
+            <ul class="cs-footer-links mb-3">
+              <li><a href="#csPrivacyModal" data-bs-toggle="modal" data-bs-target="#csPrivacyModal">Privacy Policy</a></li>
+              <li><a href="#csTermsModal" data-bs-toggle="modal" data-bs-target="#csTermsModal">Terms of Service</a></li>
+              <li><a href="#csDisclaimerModal" data-bs-toggle="modal" data-bs-target="#csDisclaimerModal">Content Disclaimer</a></li>
+              <li><a href="#csContactModal" data-bs-toggle="modal" data-bs-target="#csContactModal">Contact &amp; DMCA</a></li>
+            </ul>
+            <p class="text-secondary small mb-0"><i class="bi bi-shield-check text-accent me-1"></i> Verified 4K &amp; 1080p source catalog</p>
+          </div>
+        </div>
+
+        <!-- Disclaimer & Copyright -->
+        <div class="cs-footer-disclaimer">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <p class="mb-2">
+                <strong>Disclaimer:</strong> CineSphere does not host any media files on its servers. All contents are cataloged from external, publicly available services. All trademarks, posters, and copyright materials belong to their respective owners.
+              </p>
+              <p class="mb-0">&copy; 2026 CineSphere Entertainment Platform. All rights reserved.</p>
+            </div>
+            <div class="col-md-4 text-md-end mt-3 mt-md-0">
+              <span class="badge bg-dark border border-secondary text-secondary px-3 py-2">Phase 5 • Real Visitor Analytics &amp; UX Polish</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Interstitial / Popup Ad Infrastructure (Disabled by default, non-intrusive) -->
+    <div id="csInterstitialModal" class="cs-interstitial-backdrop d-none" data-ad-type="interstitial-popup" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="csInterstitialTitle">
+      <div class="cs-interstitial-dialog">
+        <div class="cs-interstitial-header">
+          <span class="cs-ad-tag mb-0">SPONSORED PROMOTION</span>
+          <button type="button" class="cs-interstitial-close" id="csInterstitialCloseBtn" aria-label="Close Ad">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+        <div class="cs-interstitial-body text-center">
+          <!-- ADSTERRA CODE START -->
+          <!-- Real publisher code will be inserted here -->
+          <div class="py-4">
+            <i class="bi bi-shield-lock text-accent fs-1 mb-2 d-block"></i>
+            <h3 id="csInterstitialTitle" class="fs-5 text-white mb-2">Secure High-Speed Streaming Experience</h3>
+            <p class="text-secondary small mb-3">Browse and stream completely anonymously with ultra-fast gigabit nodes.</p>
+            <span class="cs-ad-dimensions-badge">Pop-up / Interstitial Slot (Frequency Capped)</span>
+          </div>
+          <!-- ADSTERRA CODE END -->
+        </div>
+        <div class="cs-interstitial-footer">
+          <button type="button" class="btn btn-secondary btn-sm" id="csInterstitialDismissBtn">Continue to CineSphere</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Dataset & Vanilla Scripts -->
+    <script src="/assets/js/movies-data.js"></script>
+    <script src="/assets/js/seo-helper.js"></script>
+    <!-- Centralized Advertisement Manager (Phase 4) -->
+    <script src="/assets/js/ad-config.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+    <!-- ========================================== -->
+    <!-- ANALYTICS INTEGRATION START                -->
+    <!-- Real Visitor Analytics Architecture (Phase 5) -->
+    <!-- ========================================== -->
+    <script src="/assets/js/analytics-config.js"></script>
+    <script src="/assets/js/analytics.js" defer></script>
+    <!-- Example Provider Script (Disabled until real ID provided):
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_ANALYTICS_ID"></script>
+    -->
+    <!-- ANALYTICS INTEGRATION END -->
+  </body>
+</html>

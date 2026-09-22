@@ -1,0 +1,28 @@
+# ==============================================================================
+# CineSphere - Robots Exclusion Protocol (robots.txt)
+# Phase 3 SEO Technical Foundation
+# ==============================================================================
+
+User-agent: *
+# Allow crawling of all public discovery and information pages
+Allow: /
+Allow: /movies
+Allow: /latest
+Allow: /popular
+Allow: /categories
+Allow: /category/
+Allow: /movie/
+Allow: /search
+
+# Allow search engine crawlers to fetch core styles, scripts, and media assets
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+
+# Disallow private admin or staging areas if added in future
+Disallow: /admin/
+Disallow: /api/
+
+# Host and XML Sitemap Specification
+Host: https://cinesphere.example.com
+Sitemap: https://cinesphere.example.com/sitemap.xml

@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Movie Details - Watch Online &amp; 4K Download Links | CineSphere</title>
+    <meta name="description" content="Watch movies online and download 4K Ultra HD releases with high-speed direct mirror links on CineSphere." />
+    <link rel="canonical" href="https://cinesphere.example.com/movies" />
+
+    <!-- Google Search Console Verification Placeholder -->
+    <!-- <meta name="google-site-verification" content="YOUR_GSC_VERIFICATION_KEY" /> -->
+
+    <meta property="og:title" content="Movie Details | CineSphere" />
+    <meta property="og:description" content="Watch high bitrate cinema and download multi-audio releases." />
+    <meta property="og:type" content="video.movie" />
+    <meta property="og:url" content="https://cinesphere.example.com/movies" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1200&auto=format&fit=crop" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Movie Details | CineSphere" />
+    <meta name="twitter:description" content="Watch high bitrate cinema and download multi-audio releases." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1200&auto=format&fit=crop" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+  <body>
+
+    <!-- Top Banner Advertisement -->
+    <aside class="container pt-2" aria-label="Top Advertisement Area">
+      <div class="cs-ad-container ad-top-banner">
+        <span class="cs-ad-tag">ADVERTISEMENT</span>
+        <div class="cs-ad-content">
+          <i class="bi bi-badge-ad"></i>
+          <div>
+            <div class="cs-ad-text">Ultra-Fast Fiber Gigabit Streaming • No Buffering Guarantee</div>
+            <div class="cs-ad-subtext">Sponsored Advertisement Placement • Leaderboard 728 × 90</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Header / Navigation -->
+    <header class="cs-header">
+      <nav class="navbar navbar-expand-lg navbar-dark cs-container py-2" aria-label="Main Navigation">
+        <a class="navbar-brand cs-brand" href="/" aria-label="CineSphere Home">
+          <div class="cs-brand-icon"><i class="bi bi-film"></i></div>
+          <span>CINE<span class="text-accent">SPHERE</span></span>
+        </a>
+
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="desktopNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-3 gap-1">
+            <li class="nav-item"><a class="nav-link cs-nav-link" href="/"><i class="bi bi-house-door me-1"></i> Home</a></li>
+            <li class="nav-item"><a class="nav-link cs-nav-link" href="/movies"><i class="bi bi-collection-play me-1"></i> Movies</a></li>
+            <li class="nav-item"><a class="nav-link cs-nav-link" href="/latest"><i class="bi bi-clock-history me-1"></i> Latest</a></li>
+            <li class="nav-item"><a class="nav-link cs-nav-link" href="/popular"><i class="bi bi-fire me-1"></i> Popular</a></li>
+            <li class="nav-item"><a class="nav-link cs-nav-link" href="/categories"><i class="bi bi-grid me-1"></i> Categories</a></li>
+          </ul>
+
+          <div class="cs-header-search me-lg-3">
+            <i class="bi bi-search search-icon"></i>
+            <input type="text" id="headerSearchInput" placeholder="Quick search titles, actors..." />
+          </div>
+
+          <a href="/search" class="btn btn-watch btn-sm-action d-none d-lg-inline-flex">
+            <i class="bi bi-search"></i> Advanced Search
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="offcanvas offcanvas-start cs-offcanvas" tabindex="-1" id="mobileNavOffcanvas">
+      <div class="offcanvas-header border-bottom border-dark">
+        <a class="cs-brand" href="/"><div class="cs-brand-icon"><i class="bi bi-film"></i></div><span>CINE<span class="text-accent">SPHERE</span></span></a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="nav flex-column gap-2">
+          <li class="nav-item"><a class="nav-link cs-nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link cs-nav-link" href="/movies">All Movies</a></li>
+          <li class="nav-item"><a class="nav-link cs-nav-link" href="/latest">Latest Movies</a></li>
+          <li class="nav-item"><a class="nav-link cs-nav-link" href="/popular">Popular Movies</a></li>
+          <li class="nav-item"><a class="nav-link cs-nav-link" href="/categories">Categories</a></li>
+          <li class="nav-item"><a class="nav-link cs-nav-link" href="/search">Advanced Search</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="cs-container my-4" id="dynamicMovieDetailContainer">
+
+      <nav aria-label="breadcrumb">
+        <ol class="cs-breadcrumb list-unstyled mb-3">
+          <li><a href="/">Home</a></li>
+          <li class="cs-breadcrumb-divider">/</li>
+          <li><a href="/movies">Movies</a></li>
+          <li class="cs-breadcrumb-divider">/</li>
+          <li class="text-white fw-bold" id="detailBreadcrumbTitle">Movie Details</li>
+        </ol>
+      </nav>
+
+      <!-- Pre-Content Ad -->
+      <aside class="mb-4" aria-label="Pre-Content Advertisement">
+        <div class="cs-ad-container ad-hero-banner">
+          <span class="cs-ad-tag">ADVERTISEMENT</span>
+          <div class="cs-ad-content">
+            <i class="bi bi-shield-lock-fill fs-3"></i>
+            <div>
+              <div class="cs-ad-text">Fast Encrypted Downloads • High-Speed VPN with 10 Gbps Cloud Nodes</div>
+              <div class="cs-ad-subtext">Sponsored Advertisement • Leaderboard 970 × 90</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Detail Hero Section -->
+      <article class="cs-detail-hero">
+        <img id="detailMovieBackdrop" src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1600&auto=format&fit=crop" alt="Backdrop" class="cs-detail-backdrop" />
+        <div class="cs-detail-overlay"></div>
+        <div class="cs-detail-body">
+          <div class="row g-4 align-items-start">
+            
+            <!-- Poster Col -->
+            <div class="col-md-4 col-lg-3 text-center text-md-start">
+              <div class="cs-detail-poster-wrap">
+                <img id="detailMoviePoster" src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=800&auto=format&fit=crop" alt="Poster" class="cs-detail-poster" />
+              </div>
+              <div class="d-flex justify-content-center justify-content-md-start gap-2 mb-3">
+                <span class="badge bg-danger px-3 py-2" id="detailMovieQuality">4K ULTRA HD</span>
+                <span class="badge bg-dark border border-secondary px-3 py-2 text-warning">
+                  <i class="bi bi-star-fill me-1"></i> <span id="detailMovieRating">8.6</span> / 10
+                </span>
+              </div>
+            </div>
+
+            <!-- Info Col -->
+            <div class="col-md-8 col-lg-9">
+              <h1 class="cs-detail-title" id="detailMovieTitle">Dune: Part Two</h1>
+              <div class="cs-detail-tagline text-secondary fst-italic mb-3" id="detailMovieTagline">"Long live the fighters."</div>
+              
+              <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+                <span class="badge bg-secondary" id="detailMovieYear">2024</span>
+                <span class="badge bg-secondary" id="detailMovieDuration">2h 46m</span>
+                <div id="detailMovieGenres" class="d-inline-flex flex-wrap gap-2">
+                  <a href="/category/sci-fi" class="cs-category-pill">Sci-Fi</a>
+                  <a href="/category/action" class="cs-category-pill">Action</a>
+                  <a href="/category/adventure" class="cs-category-pill">Adventure</a>
+                </div>
+              </div>
+
+              <!-- Synopsis -->
+              <div class="mb-4">
+                <h2 class="h5 fw-bold text-white mb-2">Movie Synopsis</h2>
+                <p class="text-secondary leading-relaxed" id="detailMovieDescription">
+                  Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe, he endeavors to prevent a catastrophic future.
+                </p>
+              </div>
+
+              <!-- Metadata Grid -->
+              <div class="cs-metadata-grid">
+                <div><div class="cs-meta-item-label">Director</div><div class="cs-meta-item-value" id="detailMovieDirector">Denis Villeneuve</div></div>
+                <div><div class="cs-meta-item-label">Cast</div><div class="cs-meta-item-value" id="detailMovieCast">Timothée Chalamet, Zendaya, Rebecca Ferguson</div></div>
+                <div><div class="cs-meta-item-label">Language</div><div class="cs-meta-item-value" id="detailMovieLanguage">English (Dual Audio)</div></div>
+                <div><div class="cs-meta-item-label">Country</div><div class="cs-meta-item-value" id="detailMovieCountry">USA</div></div>
+                <div><div class="cs-meta-item-label">Audio</div><div class="cs-meta-item-value" id="detailMovieAudio">Dolby Atmos 7.1 TrueHD</div></div>
+                <div><div class="cs-meta-item-label">Codec</div><div class="cs-meta-item-value" id="detailMovieCodec">AV1 / x265 10-bit HDR</div></div>
+                <div><div class="cs-meta-item-label">File Size</div><div class="cs-meta-item-value" id="detailMovieSize">18.5 GB</div></div>
+                <div><div class="cs-meta-item-label">Format</div><div class="cs-meta-item-value">MKV / MP4</div></div>
+              </div>
+
+              <!-- In-Content Ad -->
+              <aside class="my-4" aria-label="Inside Content Advertisement">
+                <div class="cs-ad-container ad-in-content">
+                  <span class="cs-ad-tag">ADVERTISEMENT</span>
+                  <div class="cs-ad-content">
+                    <i class="bi bi-display fs-3"></i>
+                    <div>
+                      <div class="cs-ad-text">Stream in Full Bitrate Without ISP Throttling • Verified VPN</div>
+                      <div class="cs-ad-subtext">Sponsored Placement • 728 × 90 In-Content Banner</div>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+
+              <!-- Action Box: Watch Now & Direct Download Links (ZERO TRAILERS) -->
+              <div class="cs-action-box" id="download">
+                <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-3">
+                  <div>
+                    <h3 class="cs-action-title"><i class="bi bi-play-circle-fill text-danger me-2"></i> Watch Online & Direct Download</h3>
+                    <p class="cs-action-desc mb-0">High-speed server links. Direct mirrors with pause/resume support.</p>
+                  </div>
+                  <div>
+                    <a href="https://cloudstream.example.com/watch/dune-2" target="_blank" rel="noopener noreferrer" class="btn btn-watch" id="detailWatchNowBtn">
+                      <i class="bi bi-play-fill fs-5"></i> Watch Online Now
+                    </a>
+                  </div>
+                </div>
+
+                <hr class="border-secondary opacity-25 my-3" />
+
+                <!-- Download Mirrors List -->
+                <div class="cs-download-options">
+                  <!-- 4K UHD -->
+                  <div class="cs-download-server-row">
+                    <div class="d-flex align-items-center gap-3">
+                      <span class="badge bg-danger p-2"><i class="bi bi-badge-4k-fill fs-6"></i></span>
+                      <div>
+                        <div class="fw-bold text-white">4K UHD 2160p HDR (10-bit HEVC) • Dual Audio</div>
+                        <div class="small text-secondary">Verified Cloud Direct Mirror • 18.5 GB • 60 Mbps</div>
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mt-2 mt-md-0">
+                      <a href="https://mirrors.example.com/download/dune-2-4k" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm-action" id="detailDownloadBtn">
+                        <i class="bi bi-cloud-download"></i> Server 1 (Fast)
+                      </a>
+                      <a href="https://mirrors.example.com/download/dune-2-4k-m2" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm-action">
+                        <i class="bi bi-hdd-network"></i> Mirror 2
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- 1080p FHD -->
+                  <div class="cs-download-server-row">
+                    <div class="d-flex align-items-center gap-3">
+                      <span class="badge bg-primary p-2"><i class="bi bi-badge-hd-fill fs-6"></i></span>
+                      <div>
+                        <div class="fw-bold text-white">1080p Full HD WEB-DL (x264 5.1 Audio)</div>
+                        <div class="small text-secondary">Standard Cloud Mirror • 4.8 GB • 15 Mbps</div>
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mt-2 mt-md-0">
+                      <a href="https://mirrors.example.com/download/dune-2-1080p" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm-action">
+                        <i class="bi bi-cloud-download"></i> Server 1
+                      </a>
+                      <a href="https://mirrors.example.com/download/dune-2-1080p-m2" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm-action">
+                        <i class="bi bi-hdd-network"></i> Mirror 2
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- 720p Mobile -->
+                  <div class="cs-download-server-row">
+                    <div class="d-flex align-items-center gap-3">
+                      <span class="badge bg-secondary p-2"><i class="bi bi-badge-sd-fill fs-6"></i></span>
+                      <div>
+                        <div class="fw-bold text-white">720p HD Mobile Friendly (AAC Stereo)</div>
+                        <div class="small text-secondary">Optimized for smartphones and low data • 1.4 GB</div>
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mt-2 mt-md-0">
+                      <a href="https://mirrors.example.com/download/dune-2-720p" target="_blank" rel="noopener noreferrer" class="btn btn-download btn-sm-action">
+                        <i class="bi bi-cloud-download"></i> Server 1
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Related Movies Section -->
+      <section class="my-5">
+        <div class="cs-section-header">
+          <h2 class="cs-section-title"><i class="bi bi-collection-play text-danger me-2"></i> Related Movies You May Like</h2>
+          <a href="/category/sci-fi" class="cs-view-all">More in Genre <i class="bi bi-chevron-right"></i></a>
+        </div>
+        <div class="movie-grid" id="relatedMoviesGrid">
+          <!-- Populated dynamically by initDynamicMovieDetail() -->
+        </div>
+      </section>
+
+      <!-- Bottom Ad -->
+      <aside class="my-5" aria-label="Bottom Banner Advertisement">
+        <div class="cs-ad-container ad-bottom-banner">
+          <span class="cs-ad-tag">ADVERTISEMENT</span>
+          <div class="cs-ad-content">
+            <i class="bi bi-film fs-3"></i>
+            <div>
+              <div class="cs-ad-text">Official CineSphere Partner Network • 24/7 High-Bandwidth Mirrors</div>
+              <div class="cs-ad-subtext">Sponsored Billboard • 970 × 90 Ad Space</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cs-footer">
+      <div class="cs-container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <a class="cs-brand mb-3 d-inline-flex" href="/"><div class="cs-brand-icon"><i class="bi bi-film"></i></div><span>CINE<span class="text-accent">SPHERE</span></span></a>
+            <p class="text-secondary small pe-lg-4">CineSphere is a modern movie discovery portal delivering verified streaming links and high-speed cloud download mirrors.</p>
+          </div>
+          <div class="col-lg-2 col-md-6 col-6">
+            <h4 class="cs-footer-title">Explore</h4>
+            <ul class="cs-footer-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/movies">All Movies</a></li>
+              <li><a href="/latest">Latest Movies</a></li>
+              <li><a href="/popular">Most Popular</a></li>
+              <li><a href="/categories">Categories</a></li>
+              <li><a href="/search">Advanced Search</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-6">
+            <h4 class="cs-footer-title">Top Genres</h4>
+            <ul class="cs-footer-links">
+              <li><a href="/category/action">Action</a></li>
+              <li><a href="/category/sci-fi">Sci-Fi</a></li>
+              <li><a href="/categories">Drama &amp; Biography</a></li>
+              <li><a href="/categories">Adventure</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="cs-footer-title">Legal &amp; Trust</h4>
+            <ul class="cs-footer-links mb-3">
+              <li><a href="#csPrivacyModal" data-bs-toggle="modal" data-bs-target="#csPrivacyModal">Privacy Policy</a></li>
+              <li><a href="#csTermsModal" data-bs-toggle="modal" data-bs-target="#csTermsModal">Terms of Service</a></li>
+              <li><a href="#csDisclaimerModal" data-bs-toggle="modal" data-bs-target="#csDisclaimerModal">Content Disclaimer</a></li>
+              <li><a href="#csContactModal" data-bs-toggle="modal" data-bs-target="#csContactModal">Contact &amp; DMCA</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="cs-footer-disclaimer">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <p class="mb-0">&copy; 2026 CineSphere Entertainment Platform. All rights reserved.</p>
+            </div>
+            <div class="col-md-4 text-md-end mt-2 mt-md-0">
+              <span class="badge bg-dark border border-secondary text-secondary px-3 py-1">Phase 5 • Real Visitor Analytics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/movies-data.js"></script>
+    <script src="/assets/js/seo-helper.js"></script>
+    <script src="/assets/js/ad-config.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+    <!-- ========================================== -->
+    <!-- ANALYTICS INTEGRATION START                -->
+    <!-- Real Visitor Analytics Architecture (Phase 5) -->
+    <!-- ========================================== -->
+    <script src="/assets/js/analytics-config.js"></script>
+    <script src="/assets/js/analytics.js" defer></script>
+    <!-- Example Provider Script (Disabled until real ID provided):
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_ANALYTICS_ID"></script>
+    -->
+    <!-- ANALYTICS INTEGRATION END -->
+  </body>
+</html>
