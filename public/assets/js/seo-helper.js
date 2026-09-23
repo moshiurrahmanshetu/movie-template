@@ -1,5 +1,5 @@
 /**
- * CineSphere - Centralized SEO & Structured Data Helper (Phase 3)
+ * Cineza - Centralized SEO & Structured Data Helper (Phase 3)
  * Pure Vanilla JavaScript Helper Module
  * 
  * Provides dynamic canonical URL generation, OpenGraph/Twitter card updates,
@@ -9,9 +9,9 @@
 (function(window) {
   'use strict';
 
-  const BASE_URL = 'https://cinesphere.example.com';
+  const BASE_URL = 'https://Cineza.example.com';
 
-  const CineSphereSEO = {
+  const CinezaSEO = {
     BASE_URL: BASE_URL,
 
     /**
@@ -178,7 +178,7 @@
       return {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "CineSphere",
+        "name": "Cineza ",
         "url": `${BASE_URL}/`,
         "description": "Discover, explore, and stream the latest high-definition movies in 4K UHD and 1080p.",
         "potentialAction": {
@@ -209,6 +209,6 @@
   };
 
   // Expose globally
-  window.CineSphereSEO = CineSphereSEO;
+  window.CinezaSEO = CinezaSEO;
 
 })(window);

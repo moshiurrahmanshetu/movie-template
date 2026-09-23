@@ -1,5 +1,5 @@
 /**
- * CineSphere - Main Vanilla JavaScript (Phase 2)
+ * Cineza - Main Vanilla JavaScript (Phase 2)
  * Pure Vanilla JS & Bootstrap 5 - No Frontend Frameworks
  */
 
@@ -265,7 +265,7 @@ function initDynamicMovieDetail() {
 }
 
 function renderMovieNotFound(container, slug) {
-  document.title = "Movie Not Found | CineSphere";
+  document.title = "Movie Not Found | Cineza ";
   container.innerHTML = `
     <div class="text-center py-5">
       <div class="display-1 text-danger mb-3"><i class="bi bi-exclamation-triangle"></i></div>
@@ -291,13 +291,13 @@ function renderMovieNotFound(container, slug) {
 
 function populateMovieDetailPage(movie) {
   // Update SEO Title & Meta Tags dynamically
-  document.title = `${movie.title} (${movie.year}) - Watch Online & 4K Download Links | CineSphere`;
-  const canonicalUrl = `https://cinesphere.example.com/movie/${movie.slug}`;
+  document.title = `${movie.title} (${movie.year}) - Watch Online & 4K Download Links | Cineza `;
+  const canonicalUrl = `https://Cineza.example.com/movie/${movie.slug}`;
   
-  if (window.CineSphereSEO) {
-    window.CineSphereSEO.setCanonical(canonicalUrl);
-    window.CineSphereSEO.setSocialMeta({
-      title: `${movie.title} (${movie.year}) | CineSphere`,
+  if (window.CinezaSEO) {
+    window.CinezaSEO.setCanonical(canonicalUrl);
+    window.CinezaSEO.setSocialMeta({
+      title: `${movie.title} (${movie.year}) | Cineza `,
       description: `Watch ${movie.title} (${movie.year}) online in 4K UHD and download high-speed direct mirrors. Directed by ${movie.director}.`,
       image: movie.poster,
       url: canonicalUrl,
@@ -305,19 +305,19 @@ function populateMovieDetailPage(movie) {
     });
 
     // Inject Schema.org Movie structured data
-    const movieSchema = window.CineSphereSEO.buildMovieSchema(movie);
-    window.CineSphereSEO.injectJsonLd('movieJsonLd', movieSchema);
+    const movieSchema = window.CinezaSEO.buildMovieSchema(movie);
+    window.CinezaSEO.injectJsonLd('movieJsonLd', movieSchema);
 
     // Inject Schema.org BreadcrumbList structured data
-    const breadcrumbsSchema = window.CineSphereSEO.buildBreadcrumbsSchema([
+    const breadcrumbsSchema = window.CinezaSEO.buildBreadcrumbsSchema([
       { name: 'Home', path: '/' },
       { name: 'Movies', path: '/movies' },
       { name: `${movie.title} (${movie.year})`, path: `/movie/${movie.slug}` }
     ]);
-    window.CineSphereSEO.injectJsonLd('breadcrumbJsonLd', breadcrumbsSchema);
+    window.CinezaSEO.injectJsonLd('breadcrumbJsonLd', breadcrumbsSchema);
   } else {
     updateMetaTag('name', 'description', `Watch ${movie.title} (${movie.year}) online in 4K UHD and download high-speed direct mirrors. Directed by ${movie.director}, starring ${movie.cast.slice(0, 3).join(', ')}.`);
-    updateMetaTag('property', 'og:title', `${movie.title} (${movie.year}) | CineSphere`);
+    updateMetaTag('property', 'og:title', `${movie.title} (${movie.year}) | Cineza `);
     updateMetaTag('property', 'og:description', movie.description);
     updateMetaTag('property', 'og:image', movie.poster);
     updateMetaTag('property', 'og:url', canonicalUrl);
@@ -435,22 +435,22 @@ function initCategoryPage() {
   if (titleEl) {
     const displayName = catMeta ? catMeta.name : (categorySlug.charAt(0).toUpperCase() + categorySlug.slice(1));
     titleEl.innerHTML = `<i class="bi ${catMeta ? catMeta.icon : 'bi-collection-play'} text-danger me-2"></i> ${displayName} Movies`;
-    document.title = `${displayName} Movies - Watch Online & 4K Downloads | CineSphere`;
+    document.title = `${displayName} Movies - Watch Online & 4K Downloads | Cineza `;
 
-    if (window.CineSphereSEO) {
-      window.CineSphereSEO.setCanonical(`/category/${categorySlug}`);
-      window.CineSphereSEO.setSocialMeta({
-        title: `${displayName} Movies | CineSphere`,
+    if (window.CinezaSEO) {
+      window.CinezaSEO.setCanonical(`/category/${categorySlug}`);
+      window.CinezaSEO.setSocialMeta({
+        title: `${displayName} Movies | Cineza `,
         description: catMeta ? catMeta.description : `Browse top-rated ${displayName} movies.`,
-        url: `https://cinesphere.example.com/category/${categorySlug}`,
+        url: `https://Cineza.example.com/category/${categorySlug}`,
         type: 'website'
       });
-      const crumbs = window.CineSphereSEO.buildBreadcrumbsSchema([
+      const crumbs = window.CinezaSEO.buildBreadcrumbsSchema([
         { name: 'Home', path: '/' },
         { name: 'Categories', path: '/categories' },
         { name: `${displayName} Movies`, path: `/category/${categorySlug}` }
       ]);
-      window.CineSphereSEO.injectJsonLd('categoryBreadcrumbJsonLd', crumbs);
+      window.CinezaSEO.injectJsonLd('categoryBreadcrumbJsonLd', crumbs);
     }
   }
 

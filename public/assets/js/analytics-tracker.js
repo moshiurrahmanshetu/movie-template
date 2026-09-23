@@ -1,5 +1,5 @@
 /**
- * CineSphere - Real Visitor Analytics Tracker (Phase 3)
+ * Cineza - Real Visitor Analytics Tracker (Phase 3)
  * Pure Vanilla JavaScript Analytics Integration Module
  * 
  * ============================================================================
@@ -35,14 +35,14 @@
   const defaultConfig = {
     // Supported providers: 'google_analytics', 'plausible', 'umami', 'custom_api', 'none'
     provider: 'none',
-    siteId: '',                // e.g. 'G-XXXXXXXXXX' or 'cinesphere.example.com'
+    siteId: '',                // e.g. 'G-XXXXXXXXXX' or 'Cineza .example.com'
     endpoint: '',              // e.g. 'https://analytics.example.com/api/event'
     debug: false,
     anonymizeIp: true
   };
 
-  const CineSphereAnalytics = {
-    config: Object.assign({}, defaultConfig, window.CineSphereAnalyticsConfig || {}),
+  const CinezaAnalytics = {
+    config: Object.assign({}, defaultConfig, window.CinezaAnalyticsConfig || {}),
     isInitialized: false,
 
     /**
@@ -54,7 +54,7 @@
       }
 
       if (this.config.debug) {
-        console.info('[CineSphere Analytics] Initialized with provider:', this.config.provider);
+        console.info('[Cineza Analytics] Initialized with provider:', this.config.provider);
       }
 
       this.isInitialized = true;
@@ -88,7 +88,7 @@
       };
 
       if (this.config.debug) {
-        console.debug('[CineSphere Analytics] PageView Captured:', pageData);
+        console.debug('[Cineza Analytics] PageView Captured:', pageData);
       }
 
       // Forward to configured provider if active
@@ -118,7 +118,7 @@
       };
 
       if (this.config.debug) {
-        console.debug('[CineSphere Analytics] Event Captured:', eventData);
+        console.debug('[Cineza Analytics] Event Captured:', eventData);
       }
 
       if (this.config.provider === 'google_analytics' && typeof window.gtag === 'function') {
@@ -231,7 +231,7 @@
     fetchRealMetrics: async function() {
       if (!this.isProviderConfigured() || !this.config.endpoint) {
         if (this.config.debug) {
-          console.info('[CineSphere Analytics] Real metrics requested, but no backend endpoint configured.');
+          console.info('[Cineza Analytics] Real metrics requested, but no backend endpoint configured.');
         }
         return null;
       }
@@ -248,7 +248,7 @@
         return await response.json();
       } catch (err) {
         if (this.config.debug) {
-          console.error('[CineSphere Analytics] Error fetching real metrics:', err);
+          console.error('[Cineza Analytics] Error fetching real metrics:', err);
         }
         return null;
       }
@@ -256,13 +256,13 @@
   };
 
   // Expose globally
-  window.CineSphereAnalytics = CineSphereAnalytics;
+  window.CinezaAnalytics = CinezaAnalytics;
 
   // Auto initialize on DOM ready
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => CineSphereAnalytics.init());
+    document.addEventListener('DOMContentLoaded', () => CinezaAnalytics.init());
   } else {
-    CineSphereAnalytics.init();
+    CinezaAnalytics.init();
   }
 
 })(window);

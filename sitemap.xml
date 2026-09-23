@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-  CineSphere XML Sitemap
+  Cineza XML Sitemap
   Phase 3 SEO Foundation - Extensionless Canonical URLs
   Generated for search engine indexing and Google Search Console readiness.
 -->
@@ -10,37 +10,37 @@
 
   <!-- Core Discovery & Hub Pages -->
   <url>
-    <loc>https://cinesphere.example.com/</loc>
+    <loc>https://Cineza .example.com/</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/movies</loc>
+    <loc>https://Cineza .example.com/movies</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/latest</loc>
+    <loc>https://Cineza .example.com/latest</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/popular</loc>
+    <loc>https://Cineza .example.com/popular</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/categories</loc>
+    <loc>https://Cineza .example.com/categories</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/search</loc>
+    <loc>https://Cineza .example.com/search</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -48,67 +48,67 @@
 
   <!-- Category & Genre Pages -->
   <url>
-    <loc>https://cinesphere.example.com/category/action</loc>
+    <loc>https://Cineza .example.com/category/action</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/category/sci-fi</loc>
+    <loc>https://Cineza .example.com/category/sci-fi</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/category/adventure</loc>
+    <loc>https://Cineza .example.com/category/adventure</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/category/comedy</loc>
+    <loc>https://Cineza .example.com/category/comedy</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/category/drama</loc>
+    <loc>https://Cineza .example.com/category/drama</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/category/horror</loc>
+    <loc>https://Cineza .example.com/category/horror</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/category/animation</loc>
+    <loc>https://Cineza .example.com/category/animation</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/category/thriller</loc>
+    <loc>https://Cineza .example.com/category/thriller</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/category/crime</loc>
+    <loc>https://Cineza .example.com/category/crime</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/category/fantasy</loc>
+    <loc>https://Cineza .example.com/category/fantasy</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/category/romance</loc>
+    <loc>https://Cineza .example.com/category/romance</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -116,109 +116,109 @@
 
   <!-- Individual Movie Information Pages -->
   <url>
-    <loc>https://cinesphere.example.com/movie/dune-2</loc>
+    <loc>https://Cineza .example.com/movie/dune-2</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/movie/interstellar</loc>
+    <loc>https://Cineza .example.com/movie/interstellar</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/movie/oppenheimer</loc>
+    <loc>https://Cineza .example.com/movie/oppenheimer</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/movie/avatar</loc>
+    <loc>https://Cineza .example.com/movie/avatar</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/movie/john-wick-4</loc>
+    <loc>https://Cineza .example.com/movie/john-wick-4</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/movie/deadpool-and-wolverine</loc>
+    <loc>https://Cineza .example.com/movie/deadpool-and-wolverine</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/movie/alien-romulus</loc>
+    <loc>https://Cineza .example.com/movie/alien-romulus</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/movie/spider-verse</loc>
+    <loc>https://Cineza .example.com/movie/spider-verse</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/movie/past-lives</loc>
+    <loc>https://Cineza .example.com/movie/past-lives</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/movie/parasite</loc>
+    <loc>https://Cineza .example.com/movie/parasite</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/movie/the-batman</loc>
+    <loc>https://Cineza .example.com/movie/the-batman</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/movie/wonka</loc>
+    <loc>https://Cineza .example.com/movie/wonka</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/movie/the-boy-and-the-heron</loc>
+    <loc>https://Cineza .example.com/movie/the-boy-and-the-heron</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/movie/a-quiet-place-day-one</loc>
+    <loc>https://Cineza .example.com/movie/a-quiet-place-day-one</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/movie/furiosa</loc>
+    <loc>https://Cineza .example.com/movie/furiosa</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/movie/top-gun-maverick</loc>
+    <loc>https://Cineza .example.com/movie/top-gun-maverick</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/movie/everything-everywhere</loc>
+    <loc>https://Cineza .example.com/movie/everything-everywhere</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://cinesphere.example.com/movie/blade-runner-2049</loc>
+    <loc>https://Cineza .example.com/movie/blade-runner-2049</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>

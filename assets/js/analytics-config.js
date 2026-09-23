@@ -1,5 +1,5 @@
 /**
- * CineSphere - Centralized Analytics Configuration (Phase 5)
+ * Cineza - Centralized Analytics Configuration (Phase 5)
  * Pure Vanilla JavaScript Configuration
  * 
  * ============================================================================
@@ -26,7 +26,7 @@
 (function(window) {
   'use strict';
 
-  window.CineSphereAnalyticsConfig = {
+  window.CinezaAnalyticsConfig = {
     // Master switch: Set to true once you have supplied a real measurement ID
     analyticsEnabled: false,
 

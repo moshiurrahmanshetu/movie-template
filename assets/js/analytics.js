@@ -1,5 +1,5 @@
 /**
- * CineSphere - Modular Visitor Analytics Loader (Phase 5)
+ * Cineza - Modular Visitor Analytics Loader (Phase 5)
  * Pure Vanilla JavaScript Module
  * 
  * ============================================================================
@@ -29,7 +29,7 @@
 (function(window, document) {
   'use strict';
 
-  const CineSphereAnalytics = {
+  const CinezaAnalytics = {
     config: null,
     isInitialized: false,
     consentState: 'pending', // 'granted' | 'denied' | 'pending'
@@ -47,10 +47,10 @@
         consentRequired: false,
         environment: 'production',
         anonymizeIp: true
-      }, window.CineSphereAnalyticsConfig || {});
+      }, window.CinezaAnalyticsConfig || {});
 
       if (this.config.debugMode) {
-        console.info('[CineSphere Analytics] Config loaded:', {
+        console.info('[Cineza Analytics] Config loaded:', {
           enabled: this.config.analyticsEnabled,
           provider: this.config.provider,
           consentRequired: this.config.consentRequired
@@ -62,7 +62,7 @@
           !this.config.measurementId || 
           this.config.measurementId === 'YOUR_ANALYTICS_ID') {
         if (this.config.debugMode) {
-          console.info('[CineSphere Analytics] Analytics disabled or awaiting real measurementId. No tracking active.');
+          console.info('[Cineza Analytics] Analytics disabled or awaiting real measurementId. No tracking active.');
         }
         return;
       }
@@ -76,7 +76,7 @@
         } else if (savedConsent === 'denied') {
           this.consentState = 'denied';
           if (this.config.debugMode) {
-            console.info('[CineSphere Analytics] User previously declined analytics consent.');
+            console.info('[Cineza Analytics] User previously declined analytics consent.');
           }
           return;
         } else {
@@ -94,7 +94,7 @@
      */
     getStoredConsent: function() {
       try {
-        return localStorage.getItem('cinesphere_analytics_consent');
+        return localStorage.getItem('Cineza_Analytics_Consent');
       } catch (e) {
         return null;
       }
@@ -102,7 +102,7 @@
 
     setStoredConsent: function(value) {
       try {
-        localStorage.setItem('cinesphere_analytics_consent', value);
+        localStorage.setItem('Cineza_analytics_consent', value);
       } catch (e) {}
     },
 
@@ -121,7 +121,7 @@
         <div class="cs-container d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
           <div class="cs-consent-text">
             <i class="bi bi-shield-check text-accent me-2"></i>
-            <span><strong>Privacy & Analytics:</strong> CineSphere uses lightweight anonymous telemetry to measure movie popularity and improve streaming performance. No personal tracking or cross-site profiling.</span>
+            <span><strong>Privacy & Analytics:</strong> Cineza uses lightweight anonymous telemetry to measure movie popularity and improve streaming performance. No personal tracking or cross-site profiling.</span>
           </div>
           <div class="cs-consent-actions d-flex align-items-center gap-2 flex-shrink-0">
             <button type="button" class="btn btn-sm btn-outline-secondary text-white" id="csConsentDeclineBtn">Decline</button>
@@ -144,7 +144,7 @@
         this.consentState = 'denied';
         banner.remove();
         if (this.config.debugMode) {
-          console.info('[CineSphere Analytics] Analytics consent declined by user.');
+          console.info('[Cineza Analytics] Analytics consent declined by user.');
         }
       });
     },
@@ -193,7 +193,7 @@
       });
 
       if (this.config.debugMode) {
-        console.info('[CineSphere Analytics] Google Analytics 4 initialized with ID:', measurementId);
+        console.info('[Cineza Analytics] Google Analytics 4 initialized with ID:', measurementId);
       }
     },
 
@@ -230,7 +230,7 @@
       const title = customTitle || document.title;
 
       if (this.config.debugMode) {
-        console.debug('[CineSphere Analytics] page_view:', { path, title });
+        console.debug('[Cineza Analytics] page_view:', { path, title });
       }
 
       if (typeof window.gtag === 'function') {
@@ -255,7 +255,7 @@
       }, eventParams || {});
 
       if (this.config.debugMode) {
-        console.debug(`[CineSphere Analytics] event (${eventName}):`, params);
+        console.debug(`[Cineza Analytics] event (${eventName}):`, params);
       }
 
       if (typeof window.gtag === 'function') {
@@ -421,13 +421,13 @@
   };
 
   // Expose globally
-  window.CineSphereAnalytics = CineSphereAnalytics;
+  window.CinezaAnalytics = CinezaAnalytics;
 
   // Initialize on DOM ready
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => CineSphereAnalytics.init());
+    document.addEventListener('DOMContentLoaded', () => CinezaAnalytics.init());
   } else {
-    CineSphereAnalytics.init();
+    CinezaAnalytics.init();
   }
 
 })(typeof window !== 'undefined' ? window : this, typeof document !== 'undefined' ? document : {});

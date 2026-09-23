@@ -1,5 +1,5 @@
 /**
- * CineSphere - Main Vanilla JavaScript (Phase 2)
+ * Cineza - Main Vanilla JavaScript (Phase 2)
  * Pure Vanilla JS & Bootstrap 5 - No Frontend Frameworks
  */
 
@@ -266,7 +266,7 @@ function initDynamicMovieDetail() {
 }
 
 function renderMovieNotFound(container, slug) {
-  document.title = "Movie Not Found | CineSphere";
+  document.title = "Movie Not Found | Cineza ";
   container.innerHTML = `
     <div class="text-center py-5">
       <div class="display-1 text-danger mb-3"><i class="bi bi-exclamation-triangle"></i></div>
@@ -292,33 +292,34 @@ function renderMovieNotFound(container, slug) {
 
 function populateMovieDetailPage(movie) {
   // Update SEO Title & Meta Tags dynamically
-  document.title = `${movie.title} (${movie.year}) - Watch Online & 4K Download Links | CineSphere`;
-  const canonicalUrl = `https://cinesphere.example.com/movie/${movie.slug}`;
+  document.title = `${movie.title} (${movie.year}) - Watch Online & 4K Download Links | Cineza `;
+  const canonicalUrl = `https://Cineza.example.com/movie/${movie.slug}`;
   
-  if (window.CineSphereSEO) {
-    window.CineSphereSEO.setCanonical(canonicalUrl);
-    window.CineSphereSEO.setSocialMeta({
-      title: `${movie.title} (${movie.year}) | CineSphere`,
+  if (window.CinezaSEO) {
+    window.CinezaSEO.setCanonical(canonicalUrl);
+    window.CinezaSEO.setSocialMeta({
+      title: `${movie.title} (${movie.year}) | Cineza `,
       description: `Watch ${movie.title} (${movie.year}) online in 4K UHD and download high-speed direct mirrors. Directed by ${movie.director}.`,
       image: movie.poster,
       url: canonicalUrl,
       type: 'video.movie'
     });
 
+  
     // Inject Schema.org Movie structured data
-    const movieSchema = window.CineSphereSEO.buildMovieSchema(movie);
-    window.CineSphereSEO.injectJsonLd('movieJsonLd', movieSchema);
+    const movieSchema = window.CinezaSEO.buildMovieSchema(movie);
+    window.CinezaSEO.injectJsonLd('movieJsonLd', movieSchema);
 
     // Inject Schema.org BreadcrumbList structured data
-    const breadcrumbsSchema = window.CineSphereSEO.buildBreadcrumbsSchema([
+    const breadcrumbsSchema = window.CinezaSEO.buildBreadcrumbsSchema([
       { name: 'Home', path: '/' },
       { name: 'Movies', path: '/movies' },
       { name: `${movie.title} (${movie.year})`, path: `/movie/${movie.slug}` }
     ]);
-    window.CineSphereSEO.injectJsonLd('breadcrumbJsonLd', breadcrumbsSchema);
+    window.CinezaSEO.injectJsonLd('breadcrumbJsonLd', breadcrumbsSchema);
   } else {
     updateMetaTag('name', 'description', `Watch ${movie.title} (${movie.year}) online in 4K UHD and download high-speed direct mirrors. Directed by ${movie.director}, starring ${movie.cast.slice(0, 3).join(', ')}.`);
-    updateMetaTag('property', 'og:title', `${movie.title} (${movie.year}) | CineSphere`);
+    updateMetaTag('property', 'og:title', `${movie.title} (${movie.year}) | Cineza `);
     updateMetaTag('property', 'og:description', movie.description);
     updateMetaTag('property', 'og:image', movie.poster);
     updateMetaTag('property', 'og:url', canonicalUrl);
@@ -436,22 +437,22 @@ function initCategoryPage() {
   if (titleEl) {
     const displayName = catMeta ? catMeta.name : (categorySlug.charAt(0).toUpperCase() + categorySlug.slice(1));
     titleEl.innerHTML = `<i class="bi ${catMeta ? catMeta.icon : 'bi-collection-play'} text-danger me-2"></i> ${displayName} Movies`;
-    document.title = `${displayName} Movies - Watch Online & 4K Downloads | CineSphere`;
+    document.title = `${displayName} Movies - Watch Online & 4K Downloads | Cineza `;
 
-    if (window.CineSphereSEO) {
-      window.CineSphereSEO.setCanonical(`/category/${categorySlug}`);
-      window.CineSphereSEO.setSocialMeta({
-        title: `${displayName} Movies | CineSphere`,
+    if (window.CinezaSEO) {
+      window.CinezaSEO.setCanonical(`/category/${categorySlug}`);
+      window.CinezaSEO.setSocialMeta({
+        title: `${displayName} Movies | Cineza `,
         description: catMeta ? catMeta.description : `Browse top-rated ${displayName} movies.`,
-        url: `https://cinesphere.example.com/category/${categorySlug}`,
+        url: `https://Cineza.example.com/category/${categorySlug}`,
         type: 'website'
       });
-      const crumbs = window.CineSphereSEO.buildBreadcrumbsSchema([
+      const crumbs = window.CinezaSEO.buildBreadcrumbsSchema([
         { name: 'Home', path: '/' },
         { name: 'Categories', path: '/categories' },
         { name: `${displayName} Movies`, path: `/category/${categorySlug}` }
       ]);
-      window.CineSphereSEO.injectJsonLd('categoryBreadcrumbJsonLd', crumbs);
+      window.CinezaSEO.injectJsonLd('categoryBreadcrumbJsonLd', crumbs);
     }
   }
 
@@ -695,10 +696,10 @@ function initSearchPage() {
     }
 
     // Analytics event trigger (debounced)
-    if (rawQuery && window.CineSphereAnalytics && typeof window.CineSphereAnalytics.trackSearch === 'function') {
+    if (rawQuery && window.CinezaAnalytics && typeof window.CinezaAnalytics.trackSearch === 'function') {
       clearTimeout(searchDebounceTimer);
       searchDebounceTimer = setTimeout(() => {
-        window.CineSphereAnalytics.trackSearch(rawQuery, filtered.length);
+        window.CinezaAnalytics.trackSearch(rawQuery, filtered.length);
       }, 700);
     }
   }
@@ -767,11 +768,11 @@ function initTrustModals() {
           </div>
           <div class="modal-body text-secondary small">
             <p class="text-white fw-bold mb-1">1. Information Collection & Usage</p>
-            <p class="mb-3">CineSphere operates strictly as a content discovery and catalog portal. We do not require account registration, collect personal identifiers, or profile users across browsing sessions. Anonymous analytics telemetry (when explicitly enabled by the site operator) measures aggregate page hits and link performance without storing personal IP addresses.</p>
+            <p class="mb-3">Cineza operates strictly as a content discovery and catalog portal. We do not require account registration, collect personal identifiers, or profile users across browsing sessions. Anonymous analytics telemetry (when explicitly enabled by the site operator) measures aggregate page hits and link performance without storing personal IP addresses.</p>
             <p class="text-white fw-bold mb-1">2. Cookies & Local Preferences</p>
-            <p class="mb-3">CineSphere uses minimal client-side storage solely to remember user display preferences (such as analytics consent choices or ad frequency limits). We do not deploy behavioral tracking cookies or third-party data broker beacons.</p>
+            <p class="mb-3">Cineza uses minimal client-side storage solely to remember user display preferences (such as analytics consent choices or ad frequency limits). We do not deploy behavioral tracking cookies or third-party data broker beacons.</p>
             <p class="text-white fw-bold mb-1">3. External Links & Services</p>
-            <p class="mb-0">Our catalog may display verified links to third-party streaming sources and cloud storage mirrors. Once you navigate away from CineSphere, your interaction is governed by the respective external service's privacy terms.</p>
+            <p class="mb-0">Our catalog may display verified links to third-party streaming sources and cloud storage mirrors. Once you navigate away from Cineza , your interaction is governed by the respective external service's privacy terms.</p>
           </div>
           <div class="modal-footer cs-modal-footer">
             <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
@@ -790,11 +791,11 @@ function initTrustModals() {
           </div>
           <div class="modal-body text-secondary small">
             <p class="text-white fw-bold mb-1">1. Catalog Service Agreement</p>
-            <p class="mb-3">By accessing CineSphere, you agree to use the catalog for informational, personal, and entertainment discovery purposes. All metadata, synopses, posters, and technical specs are provided on an 'as-is' informational basis.</p>
+            <p class="mb-3">By accessing Cineza , you agree to use the catalog for informational, personal, and entertainment discovery purposes. All metadata, synopses, posters, and technical specs are provided on an 'as-is' informational basis.</p>
             <p class="text-white fw-bold mb-1">2. Acceptable Use</p>
             <p class="mb-3">Users agree not to engage in malicious scraping, distributed denial-of-service attempts, or automated exploitation of site navigation systems.</p>
             <p class="text-white fw-bold mb-1">3. Modifications</p>
-            <p class="mb-0">CineSphere reserves the right to update metadata indexing, catalog structures, and interface features without prior notice.</p>
+            <p class="mb-0">Cineza reserves the right to update metadata indexing, catalog structures, and interface features without prior notice.</p>
           </div>
           <div class="modal-footer cs-modal-footer">
             <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
@@ -813,7 +814,7 @@ function initTrustModals() {
           </div>
           <div class="modal-body text-secondary small">
             <p class="text-white fw-bold mb-1">Hosting & Media Server Policy</p>
-            <p class="mb-3">CineSphere does <strong>not</strong> host, store, stream, or upload any video files, media streams, or copyrighted multimedia files on its web servers. All media data indexed on this platform consists of publicly accessible links discovered on the global web.</p>
+            <p class="mb-3">Cineza does <strong>not</strong> host, store, stream, or upload any video files, media streams, or copyrighted multimedia files on its web servers. All media data indexed on this platform consists of publicly accessible links discovered on the global web.</p>
             <p class="text-white fw-bold mb-1">Intellectual Property Rights</p>
             <p class="mb-0">All movie titles, theatrical posters, character stills, trademarks, and associated intellectual property belong strictly to their respective creators, production studios, and copyright holders.</p>
           </div>
@@ -837,11 +838,11 @@ function initTrustModals() {
             <p class="mb-2">If you are a copyright owner or authorized agent and believe that any indexed link infringes your rights, please submit a formal notification containing:</p>
             <ul class="mb-3 ps-3">
               <li>Identification of the copyrighted work claimed to be infringed.</li>
-              <li>Exact CineSphere catalog URL and external destination link claimed to be infringing.</li>
+              <li>Exact Cineza catalog URL and external destination link claimed to be infringing.</li>
               <li>Valid contact information including legal name, organization, and official email.</li>
               <li>A statement of good-faith belief that use of the material is unauthorized.</li>
             </ul>
-            <p class="mb-1 text-white">Contact Email: <span class="text-accent font-monospace">contact@cinesphere.example.com</span></p>
+            <p class="mb-1 text-white">Contact Email: <span class="text-accent font-monospace">contact@Cineza .example.com</span></p>
             <p class="text-muted mb-0">Inquiry response time is typically within 24–48 business hours.</p>
           </div>
           <div class="modal-footer cs-modal-footer">

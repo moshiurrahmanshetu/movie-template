@@ -1,5 +1,5 @@
 /**
- * CineSphere - Centralized Movie & Category Database
+ * Cineza - Centralized Movie & Category Database
  * Phase 2 Central Data Store - Vanilla JavaScript
  * All movie listings, detail pages, categories, and searches read from this source.
  */

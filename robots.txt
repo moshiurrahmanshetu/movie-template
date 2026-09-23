@@ -1,5 +1,5 @@
 # ==============================================================================
-# CineSphere - Robots Exclusion Protocol (robots.txt)
+# Cineza - Robots Exclusion Protocol (robots.txt)
 # Phase 3 SEO Technical Foundation
 # ==============================================================================
 
@@ -24,5 +24,5 @@ Disallow: /admin/
 Disallow: /api/
 
 # Host and XML Sitemap Specification
-Host: https://cinesphere.example.com
-Sitemap: https://cinesphere.example.com/sitemap.xml
+Host: https://Cineza .example.com
+Sitemap: https://Cineza .example.com/sitemap.xml

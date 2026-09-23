@@ -1,5 +1,5 @@
 /**
- * CineSphere - Centralized Advertisement & Monetization Configuration (Phase 4)
+ * Cineza - Centralized Advertisement & Monetization Configuration (Phase 4)
  * Pure Vanilla JavaScript - No Frontend Frameworks
  * 
  * This file governs all advertisement slots, frequency capping, responsive behavior,
@@ -71,9 +71,9 @@
   };
 
   /**
-   * CineSphere Ad Manager Class
+   * Cineza Ad Manager Class
    */
-  class CineSphereAdManager {
+  class CinezaAdManager {
     constructor(config) {
       this.config = config;
       this.initialized = false;
@@ -292,15 +292,15 @@
 
   // Instantiate and expose globally on window
   window.AD_CONFIG = AD_CONFIG;
-  window.CineSphereAds = new CineSphereAdManager(AD_CONFIG);
+  window.CinezaAds = new CinezaAdManager(AD_CONFIG);
 
   // Auto-initialize when DOM is ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
-      window.CineSphereAds.init();
+      window.CinezaAds.init();
     });
   } else {
-    window.CineSphereAds.init();
+    window.CinezaAds.init();
   }
 
 })();
